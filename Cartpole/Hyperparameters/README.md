@@ -20,7 +20,28 @@ pip install gymnasium torch matplotlib renderlab
 Overview of the methodology for testing different hyperparameter settings and the rationale behind selecting specific values.
 
 ### Learning Rate Variations
-Exploration of how different learning rates affect the speed and stability of learning, with visual comparisons and statistical analysis.
+
+The learning rate is a critical hyperparameter in training deep learning models, influencing the speed and stability of the learning process. In this analysis, we experiment with three different learning rates: `1e-2`, `1e-4`, and `1e-6`, to observe their effects on the training dynamics and performance of our DQN model applied to the Cart Pole problem.
+
+#### Experimental Setup
+Each learning rate was tested under identical conditions, with the model trained over 1000 episodes. The experiments were conducted in isolated directories to ensure that results from one do not impact another, providing a clean and controlled environment for each test.
+
+#### Impact on Performance
+- **Learning Rate 1e-2:** Exhibited faster convergence but was prone to instability in later episodes. This setting showed high variability in reward accumulation per episode, indicating potentially aggressive updates.
+- **Learning Rate 1e-4:** Offered a balance between stability and convergence speed. The model demonstrated steady improvement in performance over time, achieving higher average rewards per episode without significant fluctuations.
+- **Learning Rate 1e-6:** Resulted in very slow progress with minimal improvements in episode rewards. This rate was too conservative, leading to insufficient updates and slow learning.
+
+#### Visual Analysis
+For each learning rate, we plotted the evolution of episode rewards, loss metrics, and the epsilon decay to visually assess the learning process. These plots are crucial for understanding the trade-offs between exploration and exploitation as moderated by the learning rate.
+
+![Learning Rate 1e-2 Performance](path_to_learning_rate_1e-2_plot.png)
+![Learning Rate 1e-4 Performance](path_to_learning_rate_1e-4_plot.png)
+![Learning Rate 1e-6 Performance](path_to_learning_rate_1e-6_plot.png)
+
+#### Conclusion
+The analysis clearly shows that a medium learning rate (1e-4) is optimal for this particular setting, providing a good compromise between learning speed and stability. Both the overly high and overly low learning rates led to suboptimal learning, with either instability or inadequate learning progress.
+
+
 
 ### Discount Factor Adjustments
 Investigation into the influence of discount factor variations on the long-term reward strategy of the DQN agent.
