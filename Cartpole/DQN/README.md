@@ -7,7 +7,7 @@
 ## Introduction
 This repository contains the implementation of the Deep Q-Network (DQN) algorithm applied to the classic "Cart Pole" problem, which is a staple challenge in the field of reinforcement learning. Our project aims to demonstrate how DQN can effectively balance a pole on a moving cart through autonomous learning and decision-making processes.
 
-![DQN](assets/Q-learning-2.jpg)
+![DQN](assets/DQN.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
