@@ -100,6 +100,19 @@ After intensive training and testing phases, our DQN agent demonstrates remarkab
 
 The agent was trained over 1000 episodes with the aim of maximizing the pole's balance duration on the cart. The learning process is quantified through plots that display the evolution of rewards, losses, and the agent's decision-making epsilon parameter over time.
 
+#### Training Plots
+<table>
+  <tr>
+    <td>Epsilon Decay Plot<br><img src="assets/Epsilon_plot.png" alt="Epsilon Decay Plot" width="320px"></td>
+    <td>Loss Plot<br><img src="assets/Loss_plot.png" alt="Loss Plot" width="320px"></td>
+    <td>Reward Plot<br><img src="assets/reward_plot.png" alt="Reward Plot" width="320px"></td>
+  </tr>
+</table>
+
+### Training Progress
+
+The agent was trained over 1000 episodes with the aim of maximizing the pole's balance duration on the cart. The learning process is quantified through plots that display the evolution of rewards, losses, and the agent's decision-making epsilon parameter over time.
+
 #### Epsilon Decay Plot
 Shows the decrease in epsilon value, reflecting the transition from exploration to exploitation. This plot helps in understanding how the agent gradually shifts its strategy to rely more on learned behaviors rather than random actions.
 
