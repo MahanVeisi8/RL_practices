@@ -69,16 +69,18 @@ These parameters collectively influence the agent's ability to balance explorati
 
 
 
+Here’s how you can structure the results section into a single table with four rows, each corresponding to a different set of temperature parameters, and five columns including descriptions and visuals for temperature, loss, and reward plots:
+
 ### Results
-Visual presentation and analysis of the impacts of various temperature parameters on agent training dynamics and performance.
 
-| Hyperparameter Set | Description | Loss Plot | Reward Plot |
-|---------------------|-------------|-----------|-------------|
-| **Set 1** <br> `temperature_max`: 1000 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 0.995 | High initial temperature leads to extensive exploration early in training. As the temperature decays, exploration decreases, shifting towards exploitation. | ![Set 1 Loss](path_to_set1_loss_plot.png) | ![Set 1 Reward](path_to_set1_reward_plot.png) |
-| **Set 2** <br> `temperature_max`: 10 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 0.995 | Moderate initial temperature balances exploration and exploitation throughout training. Decay rate ensures a gradual shift towards exploitation. | ![Set 2 Loss](path_to_set2_loss_plot.png) | ![Set 2 Reward](path_to_set2_reward_plot.png) |
-| **Set 3** <br> `temperature_max`: 0.1 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 0.995 | Low initial temperature promotes early exploitation with limited exploration. Temperature decay has minimal impact due to already low initial value. | ![Set 3 Loss](path_to_set3_loss_plot.png) | ![Set 3 Reward](path_to_set3_reward_plot.png) |
-| **Set 4** <br> `temperature_max`: 1 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 1 (constant) | Constant temperature maintains a consistent balance between exploration and exploitation throughout training. | ![Set 4 Loss](path_to_set4_loss_plot.png) | ![Set 4 Reward](path_to_set4_reward_plot.png) |
+The table below presents a comprehensive analysis of how different temperature settings impact the training dynamics and agent performance in our DQN model. Each set varies in its initial exploration intensity and decay rate, affecting how the agent balances exploration with exploitation throughout the training episodes.
 
+| Set | Description | Temperature Plot | Loss Plot | Reward Plot |
+|-----|-------------|------------------|-----------|-------------|
+| **Set 1** <br> High Initial Temperature | Starts with a very high temperature, promoting extensive exploration initially. As the temperature decays, the agent gradually shifts towards exploiting its gathered knowledge, showing stabilization in performance metrics. | ![Temperature 1](assets/Hyperparameter_set_1/Temperature.png) | ![Loss 1](assets/Hyperparameter_set_1/Loss_plot.png) | ![Reward 1](assets/Hyperparameter_set_1/reward_plot.png) |
+| **Set 2** <br> Moderate Initial Temperature | Begins at a moderate temperature, fostering a balanced approach to exploration and exploitation right from the start. This setting leads to a steady increase in performance with fewer fluctuations compared to higher temperatures. | ![Temperature 2](assets/Hyperparameter_set_1/Temperature.png) | ![Loss 2](assets/Hyperparameter_set_1/Loss_plot.png) | ![Reward 2](assets/Hyperparameter_set_1/reward_plot.png) |
+| **Set 3** <br> Low Initial Temperature | With a low starting temperature, the model focuses on exploitation over exploration, which can restrict learning in complex environments but may quickly optimize in simpler scenarios. | ![Temperature 3](assets/Hyperparameter_set_1/Temperature.png) | ![Loss 3](assets/Hyperparameter_set_1/Loss_plot.png) | ![Reward 3](assets/Hyperparameter_set_1/reward_plot.png) |
+| **Set 4** <br> Constant Temperature | Maintains a constant temperature throughout training, ensuring a consistent level of exploration. This is particularly useful in environments where learning conditions do not vary significantly over time. | ![Temperature 4](assets/Hyperparameter_set_1/Temperature.png) | ![Loss 4](assets/Hyperparameter_set_1/Loss_plot.png) | ![Reward 4](assets/Hyperparameter_set_1/reward_plot.png) |
 
 ## Conclusions 📝
 Summary of key findings from the Boltzmann exploration experiments, highlighting optimal settings for different scenarios and the trade-offs between exploration and exploitation based on the temperature parameter.
