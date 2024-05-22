@@ -68,15 +68,17 @@ Exploration of how different temperature settings influence the learning process
 These parameters collectively influence the agent's ability to balance exploration of new actions and exploitation of known rewarding actions.
 
 
-### Results
-Visual presentation and analysis of the impacts of various temperature parameters on agent training dynamics and performance, with plots for:
-- Temperature variations over episodes.
-- Loss metrics and reward outcomes.
 
-| Temperature Setting | Description | Temperature Plot | Loss Plot | Reward Plot |
-|---------------------|-------------|------------------|-----------|-------------|
-| **High Temperature** | Leads to more explorative behavior, potentially enhancing state space coverage. | ![High Temp](path_to_high_temp_plot.png) | ![High Temp Loss](path_to_high_temp_loss.png) | ![High Temp Reward](path_to_high_temp_reward.png) |
-| **Low Temperature** | Results in more exploitative behavior, possibly speeding up convergence but risking local optima. | ![Low Temp](path_to_low_temp_plot.png) | ![Low Temp Loss](path_to_low_temp_loss.png) | ![Low Temp Reward](path_to_low_temp_reward.png) |
+### Results
+Visual presentation and analysis of the impacts of various temperature parameters on agent training dynamics and performance.
+
+| Hyperparameter Set | Description | Loss Plot | Reward Plot |
+|---------------------|-------------|-----------|-------------|
+| **Set 1** <br> `temperature_max`: 1000 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 0.995 | High initial temperature leads to extensive exploration early in training. As the temperature decays, exploration decreases, shifting towards exploitation. | ![Set 1 Loss](path_to_set1_loss_plot.png) | ![Set 1 Reward](path_to_set1_reward_plot.png) |
+| **Set 2** <br> `temperature_max`: 10 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 0.995 | Moderate initial temperature balances exploration and exploitation throughout training. Decay rate ensures a gradual shift towards exploitation. | ![Set 2 Loss](path_to_set2_loss_plot.png) | ![Set 2 Reward](path_to_set2_reward_plot.png) |
+| **Set 3** <br> `temperature_max`: 0.1 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 0.995 | Low initial temperature promotes early exploitation with limited exploration. Temperature decay has minimal impact due to already low initial value. | ![Set 3 Loss](path_to_set3_loss_plot.png) | ![Set 3 Reward](path_to_set3_reward_plot.png) |
+| **Set 4** <br> `temperature_max`: 1 <br> `temperature_min`: 0.0001 <br> `temperature_decay`: 1 (constant) | Constant temperature maintains a consistent balance between exploration and exploitation throughout training. | ![Set 4 Loss](path_to_set4_loss_plot.png) | ![Set 4 Reward](path_to_set4_reward_plot.png) |
+
 
 ## Conclusions 📝
 Summary of key findings from the Boltzmann exploration experiments, highlighting optimal settings for different scenarios and the trade-offs between exploration and exploitation based on the temperature parameter.
