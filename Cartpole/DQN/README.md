@@ -103,9 +103,9 @@ The agent was trained over 1000 episodes with the aim of maximizing the pole's b
 #### Training Plots
 <table>
   <tr>
-    <td>Epsilon Decay Plot<br><img src="assets/Epsilon_plot.png" alt="Epsilon Decay Plot" width="320px"></td>
     <td>Loss Plot<br><img src="assets/Loss_plot.png" alt="Loss Plot" width="320px"></td>
     <td>Reward Plot<br><img src="assets/reward_plot.png" alt="Reward Plot" width="320px"></td>
+    <td>Epsilon Decay Plot<br><img src="assets/Epsilon_plot.png" alt="Epsilon Decay Plot" width="320px"></td>
   </tr>
 </table>
 
@@ -125,54 +125,12 @@ Animated GIFs and video sequences from test runs provide a visual confirmation o
 
 <table>
   <tr>
-    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="320px"></td>
-    <td>Epoch 500<br><img src="assets/500epoch.gif" alt="Epoch 500 Performance" width="320px"></td>
-    <td>Epoch 1000<br><img src="assets/1000epoch.gif" alt="Epoch 1000 Performance" width="320px"></td>
+    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="280px"></td>
+    <td>Epoch 500<br><img src="assets/500epoch.gif" alt="Epoch 500 Performance" width="280px"></td>
+    <td>Epoch 1000<br><img src="assets/1000epoch.gif" alt="Epoch 1000 Performance" width="280px"></td>
   </tr>
 </table>
 
-
-## Results and Performance Analysis
-
-After intensive training and testing phases, our DQN agent demonstrates remarkable progress and efficiency in solving the CartPole problem. This section outlines the agent's performance across different training epochs and highlights its ability to generalize during testing phases.
-
-
-### Training Progress
-
-The agent was trained over 1000 episodes with the aim of maximizing the pole's balance duration on the cart. The learning process is quantified through plots that display the evolution of rewards, losses, and the agent's decision-making epsilon parameter over time.
-
-#### Epsilon Decay Plot
-Shows the decrease in epsilon value, reflecting the transition from exploration to exploitation. This plot helps in understanding how the agent gradually shifts its strategy to rely more on learned behaviors rather than random actions.
-
-![Epsilon Decay Plot](assets/Epsilon_plot.png)
-
-#### Loss Plot
-Illustrates the changes in learning loss over time, which provides insights into the network's learning efficiency and convergence behavior.
-
-![Loss Plot](assets/Loss_plot.png)
-
-#### Reward Plot
-Captures the total rewards accumulated by the agent in each episode, offering a direct measure of performance and the agent's ability to maintain the pole's balance over time.
-
-![Reward Plot](assets/reward_plot.png)
-
-### Testing Phase
-
-Testing of the trained models at different epochs (10, 500, and 1000) showcases the agent's improvement and stability over time. The results from these tests confirm the model's robustness and ability to generalize the learned policy to unseen scenarios.
-
-- **Epoch 10**: Early stages of learning, where the agent's policy is still underdeveloped.
-- **Epoch 500**: Midway through training, showing significant improvements in strategy and stability.
-- **Epoch 1000**: Fully trained agent demonstrating optimal performance and decision-making capabilities.
-
-### Visualizing Agent Performance
-
-Animated GIFs and video sequences from test runs provide a visual confirmation of the agent's competence. These visual aids illustrate how the agent effectively balances the pole, adapting to different initial conditions and disturbances.
-
-#### Performance Video at Epoch 1000
-
-A video from the final testing phase, displaying the agent's refined skills in balancing the pole on the cart without human intervention.
-
-![View Performance Video](assets/1000epoch.gif)
 
 ### Summary
 
