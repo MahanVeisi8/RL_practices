@@ -15,7 +15,7 @@ This repository provides an implementation of Boltzmann exploration within Deep 
 
 ## Setup 🛠️
 **Running the Notebook in Google Colab**
-- Simply open the notebook in Google Colab, which requires only a Google account and internet access.
+- Simply open the notebook in Google Colab, which requires only a Google account and internet access.😊
 
 **Installation of Required Libraries**
 ```bash
