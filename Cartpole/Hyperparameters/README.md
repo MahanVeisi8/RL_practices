@@ -39,7 +39,7 @@ Below are the plots showcasing the evolution of episode rewards and loss metrics
 | Learning Rate | Loss Plot                          | Reward Plot                        |
 |---------------|------------------------------------|------------------------------------|
 | **1e-2**      | ![Loss 1e-2](assets/Learning_rate/1e-2/Loss_plot.png) | ![Reward 1e-2](assets/Learning_rate/1e-2/reward_plot.png) |
-| **1e-4**      | ![Loss 1e-4](assets/Learning_rate/1e-4/Loss_plot (1).png) | ![Reward 1e-4](assets/Learning_rate/1e-4/reward_plot.png) |
+| **1e-4**      | ![Loss 1e-4](assets/Learning_rate/1e-4/Loss_plot.png) | ![Reward 1e-4](assets/Learning_rate/1e-4/reward_plot.png) |
 | **1e-6**      | ![Loss 1e-6](assets/Learning_rate/1e-6/Loss_plot.png) | ![Reward 1e-6](assets/Learning_rate/1e-6/reward_plot.png) |
 
 
