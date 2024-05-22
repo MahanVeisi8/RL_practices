@@ -1,7 +1,4 @@
-For the new project focusing on analyzing the impact of hyperparameters on the DQN model's performance, let's write a structured README that highlights the purpose, approach, and findings of your experiments. Here’s an outline including an updated introduction and table of contents:
-
-```markdown
-# README - DQN Hyperparameter Analysis
+# DQN Hyperparameter Analysis
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JLVm4wdrtjpMiQP_3SmdOhWjX1hhFLP8?usp=sharing)
 [![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/downloads/release/python-380/)
@@ -37,6 +34,4 @@ Detailed presentation of the training and testing results with comprehensive vis
 ## Conclusions
 Summary of the insights gained from the hyperparameter analysis, including recommendations for choosing optimal settings for similar reinforcement learning tasks.
 
-```
 
-Make sure each section is concise and directly addresses the aims outlined in the introduction. This structured approach will help users understand the purpose of the experiments, replicate them if desired, and apply the findings to their own work in reinforcement learning.
