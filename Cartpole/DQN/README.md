@@ -136,25 +136,3 @@ Animated GIFs and video sequences from test runs provide a visual confirmation o
 
 The graphs and visual content underline the DQN agent's successful learning curve and its efficiency in mastering the CartPole balancing task. This analysis not only confirms the effectiveness of the implemented DQN components but also showcases the potential of reinforcement learning in complex decision-making scenarios.
 
-
-## Usage
-Instructions on how to run the project, train the models, and evaluate them:
-
-```bash
-python train_test.py --train
-python train_test.py --test
-```
-
-## Contributing
-We welcome contributions to this project. Please read the contributing guidelines before starting any work.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-### Notes:
-- Replace `"Link-to-Colab-notebook"` with the actual link to your Google Colab notebook.
-- Update the paths in the badges to match your actual repository structure and URLs.
-- Ensure all links within the Table of Contents are correctly anchored to their respective sections for easy navigation.
-
-This structured README closely aligns with the style and detailed descriptions found in your ML repository, offering a cohesive look and thorough documentation across your projects.
