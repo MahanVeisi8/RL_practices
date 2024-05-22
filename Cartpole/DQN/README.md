@@ -25,6 +25,10 @@ This repository contains the implementation of the Deep Q-Network (DQN) algorith
   - [Summary](#summary)
 
 ## Setup
+
+**Running the Notebook in Google Colab**
+- The notebook is designed for easy execution in Google Colab, requiring no additional setup other than a Google account and internet access.😊
+  
 The code is designed to run in a Python environment with essential machine learning and simulation libraries. You can execute the notebook directly in Google Colab using the badge link provided, which includes a pre-configured environment with all necessary dependencies.
 
 ### Prerequisites
