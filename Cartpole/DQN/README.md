@@ -103,7 +103,7 @@ The agent was trained over 1000 episodes with the aim of maximizing the pole's b
 #### Epsilon Decay Plot
 Shows the decrease in epsilon value, reflecting the transition from exploration to exploitation. This plot helps in understanding how the agent gradually shifts its strategy to rely more on learned behaviors rather than random actions.
 
-![Epsilon Decay Plot](path-to-epsilon-plot.png)
+![Epsilon Decay Plot](assets/Epsilon_plot.png)
 
 #### Loss Plot
 Illustrates the changes in learning loss over time, which provides insights into the network's learning efficiency and convergence behavior.
