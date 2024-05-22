@@ -39,41 +39,60 @@ The `ReplayMemory` class efficiently manages and stores experiences, minimizing 
     def __len__(self):
         # Return the current number of experiences stored.
 ```
-- **__init__(self, capacity)**: Initialize the memory buffer with a fixed size.
-- **store(self, state, action, next_state, reward, done)**: Store new experiences in the memory.
-- **sample(self, batch_size)**: Randomly sample a batch of experiences for training.
-- **__len__(self)**: Return the current number of experiences stored.
 
 ### DQN Network Class
 
 The `DQN_Network` class defines the neural network architecture for approximating the Q-function, crucial for evaluating the best action to take in a given state.
 
-- **__init__(self, input_dim, num_actions)**: Setup the layers of the network with specified input dimensions and number of actions.
-- **forward(self, x)**: Define the forward pass to compute Q-values from the state inputs.
-- **_initialize_weights(self)**: Initialize network weights using appropriate schemes to ensure effective learning.
+```py
+class DQN_Network(nn.Module):
+    def __init__(self, input_dim, num_actions):
+        # Setup the layers of the network with specified input dimensions and number of actions.
+    def forward(self, x):
+        # Define the forward pass to compute Q-values from the state inputs.
+    def _initialize_weights(self):
+        # Initialize network weights using appropriate schemes to ensure effective learning.
+```
 
 ### DQN Agent Class
 
 The `DQN_Agent` orchestrates the learning process, manages interactions with the environment, and updates network parameters based on the observed experiences.
 
-- **__init__(self, env, epsilon_max, epsilon_min, epsilon_decay, learning_rate, discount, memory_capacity)**: Configure agent with environment, learning parameters, and exploration settings.
-- **select_action(self, state)**: Select an action using epsilon-greedy policy based on current Q-values.
-- **learn(self, batch_size)**: Perform a learning update using a batch of sampled experiences from memory.
-- **update_epsilon(self)**: Adjust the epsilon value for the epsilon-greedy policy to balance exploration and exploitation.
-- **save(self, path)**: Save the current state of the network to a file.
-- **hard_update(self)**: Synchronize the weights of the target network with the main network.
+```py
+class DQN_Agent:
+    def __init__(self, env, epsilon_max, epsilon_min, epsilon_decay, learning_rate, discount, memory_capacity):
+        # Configure agent with environment, learning parameters, and exploration settings.
+    def select_action(self, state):
+        # Select an action using epsilon-greedy policy based on current Q-values.
+    def learn(self, batch_size):
+        # Perform a learning update using a batch of sampled experiences from memory.
+    def update_epsilon(self):
+        # Adjust the epsilon value for the epsilon-gready policy to balance exploration and exploitation.
+    def save(self, path):
+        # Save the current state of the network to a file.
+    def hard_update(self):
+        # Synchronize the weights of the target network with the main network.
+```
 
 ### Model TrainTest Class
 
 The `Model_TrainTest` class manages the training and testing processes, setting up the environment, and executing the training cycles according to specified hyperparameters.
 
-- **__init__(self, agent, env, hyperparams)**: Initialize with an agent, environment, and training/testing settings.
-- **state_preprocess(self, state)**: Process raw state information from the environment to fit the network input requirements.
-- **train(self)**: Run the training loop, collecting data, updating the agent, and logging results.
-- **test(self, max_episodes)**: Evaluate the agent's performance on unseen data without exploration moves.
-- **plot_training(self)**: Generate and save plots of rewards, losses, and other metrics to visualize the training progress.
-
-This structured approach ensures each component of the DQN model is focused, testable, and maintains clear responsibilities, facilitating easier debugging and improvements.
+```py
+class DQN_Agent:
+    def __init__(self, env, epsilon_max, epsilon_min, epsilon_decay, learning_rate, discount, memory_capacity):
+        # Configure agent with environment, learning parameters, and exploration settings.
+    def select_action(self, state):
+        # Select an action using epsilon-greedy policy based on current Q-values.
+    def learn(self, batch_size):
+        # Perform a learning update using a batch of sampled experiences from memory.
+    def update_epsilon(self):
+        # Adjust the epsilon value for the epsilon-gready policy to balance exploration and exploitation.
+    def save(self, path):
+        # Save the current state of the network to a file.
+    def hard_update(self):
+        # Synchronize the weights of the target network with the main network.
+```
 
 
 #### State Preprocessing
