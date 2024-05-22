@@ -1,35 +1,34 @@
 # README - DQN for CartPole
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](Link-to-Colab-notebook)
+[![Open In Colab](https://colab.research.google.com/drive/1-P1I0lxPf2scs4ZyOFb0tostuokrdm-v?usp=sharing)
 [![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/downloads/release/python-380/)
 [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/your-username/your-repository/blob/main/requirements.txt)
 
 ## Introduction
-This project focuses on implementing the Deep Q-Network (DQN) and State-Action-Reward-State-Action (SARSA) algorithms to solve the "Cart Pole" problem, a benchmark task in reinforcement learning. Our goal is to train a model that can successfully balance a pole on a moving cart using these RL techniques.
+This repository contains the implementation of the Deep Q-Network (DQN) algorithm applied to the classic "Cart Pole" problem, which is a staple challenge in the field of reinforcement learning. The objective is to develop a model that can autonomously balance a pole on a moving cart, demonstrating the capabilities of DQN in maintaining system equilibrium.
 
-## Table of Contents
-- [Setup](#setup)
-- [Implementing DQN Components](#implementing-dqn-components)
-  - [Replay Memory Class](#replay-memory-class)
-  - [DQN Network Class](#dqn-network-class)
-  - [DQN Agent Class](#dqn-agent-class)
-- [Model TrainTest Class](#model-traintest-class)
-  - [State Preprocessing](#state-preprocessing)
-  - [Training](#training)
-  - [Testing](#testing)
-  - [Visualization](#visualization)
-- [Usage](#usage)
-- [Contributing](#contributing)
+## Setup
+The code is designed to run in a Python environment with essential machine learning and simulation libraries. You can execute the notebook directly in Google Colab using the badge link provided, which includes a pre-configured environment with all necessary dependencies.
 
-### Setup
-To run this notebook, ensure you have access to a Python environment with necessary libraries installed. For running in Google Colab, use the badge above to open directly.
+### Prerequisites
+To run this project locally, you need to install the following Python packages. This setup ensures you have all the required libraries:
 
 ```bash
-pip install gymnasium torch matplotlib renderlab
+pip install gymnasium
+pip install torch
+pip install matplotlib
+pip install renderlab
 ```
 
 ### Implementing DQN Components
-Detailed breakdown of each component developed for the DQN model:
+The DQN model is broken down into several key components, each responsible for a part of the learning process:
+
+- **Replay Memory**: Handles storage and retrieval of experience tuples to reduce correlation between consecutive learning samples.
+- **DQN Network**: A neural network that estimates the Q-values for each action given a particular state.
+- **DQN Agent**: Manages the training cycles, decision-making processes, and updates to the network based on observations from the environment.
+
+These components are crucial for the success of the DQN algorithm in navigating and solving the Cart Pole challenge efficiently.
+
 
 #### Replay Memory Class
 Manages the experience replay buffer, a crucial aspect of learning in DQNs to break correlation between successive samples.
