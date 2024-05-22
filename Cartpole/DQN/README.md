@@ -117,9 +117,10 @@ An essential aspect of our training process is **reward shaping**, which involve
 - **Cart Position Penalty**: To prevent the cart from reaching the edges of the track, a penalty is applied based on the cart's distance from the center. This keeps the actions focused on maintaining a central position.
 
 These enhancements to the reward function are crucial for guiding the agent towards more desirable behaviors and are directly integrated into the training loop of the `Model_TrainTest` class. By adjusting the rewards based on the pole's angle and the cart's position, we significantly increase the stability and performance of the agent, making it adept at maintaining balance under varying conditions.
-```
 
 This addition not only clarifies how reward shaping is implemented within your training regime but also underscores its importance in achieving better learning outcomes and agent performance.
+
+
 ## Results and Performance Analysis
 
 After intensive training and testing phases, our DQN agent demonstrates remarkable progress and efficiency in solving the CartPole problem. This section outlines the agent's performance across different training epochs and highlights its ability to generalize during testing phases.
