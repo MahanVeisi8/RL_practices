@@ -109,6 +109,34 @@ The agent was trained over 1000 episodes with the aim of maximizing the pole's b
   </tr>
 </table>
 
+### Testing Phase
+
+Testing of the trained models at different epochs (10, 500, and 1000) showcases the agent's improvement and stability over time. The results from these tests confirm the model's robustness and ability to generalize the learned policy to unseen scenarios.
+
+- **Epoch 10**: Early stages of learning, where the agent's policy is still underdeveloped.
+- **Epoch 500**: Midway through training, showing significant improvements in strategy and stability.
+- **Epoch 1000**: Fully trained agent demonstrating optimal performance and decision-making capabilities.
+
+### Visualizing Agent Performance
+
+Animated GIFs and video sequences from test runs provide a visual confirmation of the agent's competence. These visual aids illustrate how the agent effectively balances the pole, adapting to different initial conditions and disturbances.
+
+#### Performance Videos
+
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="320px"></td>
+    <td>Epoch 500<br><img src="assets/500epoch.gif" alt="Epoch 500 Performance" width="320px"></td>
+    <td>Epoch 1000<br><img src="assets/1000epoch.gif" alt="Epoch 1000 Performance" width="320px"></td>
+  </tr>
+</table>
+
+
+## Results and Performance Analysis
+
+After intensive training and testing phases, our DQN agent demonstrates remarkable progress and efficiency in solving the CartPole problem. This section outlines the agent's performance across different training epochs and highlights its ability to generalize during testing phases.
+
+
 ### Training Progress
 
 The agent was trained over 1000 episodes with the aim of maximizing the pole's balance duration on the cart. The learning process is quantified through plots that display the evolution of rewards, losses, and the agent's decision-making epsilon parameter over time.
