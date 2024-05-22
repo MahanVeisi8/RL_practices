@@ -8,10 +8,13 @@
 This repository provides an implementation of Boltzmann exploration within Deep Q-Networks (DQN) for the Cart Pole problem. Boltzmann exploration, unlike the epsilon-greedy method, offers a probabilistic approach to action selection. It utilizes the **`temperature`** parameter to adjust the probability of selecting actions based on their Q-values, aiming for a more effective exploration-exploitation balance.
 
 ## Table of Contents
-- [Setup](#setup)
-- [Boltzmann Exploration](#boltzmann-exploration)
-- [Hyperparameter Impact](#hyperparameter-impact)
-- [Conclusions](#conclusions)
+- [Setup](#setup-️)
+- [Boltzmann Exploration](#boltzmann-exploration-)
+- [Hyperparameter Impact](#hyperparameter-impact-)
+  - [Experiment Setup](#experiment-setup)
+  - [Hyperparameter Settings](#hyperparameter-settings)
+  - [Comparative Analysis of Results](#comparative-analysis-of-results)
+- [Conclusions](#conclusions-📝)
 
 ## Setup 🛠️
 **Running the Notebook in Google Colab**
