@@ -69,19 +69,20 @@ These parameters collectively influence the agent's ability to balance explorati
 
 ### Hyperparameter Settings
 
-**Set 1: High Exploration**           | **Set 2: Moderate Exploration**
-| Parameter           | Value         | | Parameter           | Value         |
-|---------------------|---------------| |---------------------|---------------|
-| `temperature_max`   | 1000          | | `temperature_max`   | 10            |
-| `temperature_min`   | 0.0001        | | `temperature_min`   | 0.0001        |
-| `temperature_decay` | 0.995         | | `temperature_decay` | 0.995         |
+**Set 1: High Exploration** | **Set 2: Moderate Exploration**
+|-----------|-------| |-----------|-------|
+| Parameter | Value | | Parameter | Value |
+| `temperature_max` | 1000 | | `temperature_max` | 10 |
+| `temperature_min` | 0.0001 | | `temperature_min` | 0.0001 |
+| `temperature_decay` | 0.995 | | `temperature_decay` | 0.995 |
 
-**Set 3: Low Exploration**            | **Set 4: Constant Temperature**
-| Parameter           | Value         | | Parameter           | Value         |
-|---------------------|---------------| |---------------------|---------------|
-| `temperature_max`   | 0.1           | | `temperature_max`   | 1             |
-| `temperature_min`   | 0.0001        | | `temperature_min`   | 0.0001        |
-| `temperature_decay` | 0.995         | | `temperature_decay` | 1             |
+**Set 3: Low Exploration** | **Set 4: Constant Temperature**
+|-----------|-------| |-----------|-------|
+| Parameter | Value | | Parameter | Value |
+| `temperature_max` | 0.1 | | `temperature_max` | 1 |
+| `temperature_min` | 0.0001 | | `temperature_min` | 0.0001 |
+| `temperature_decay` | 0.995 | | `temperature_decay` | 1 |
+
 
 
 ### Comparative Analysis of Results
