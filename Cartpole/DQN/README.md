@@ -131,7 +131,7 @@ Animated GIFs and video sequences from test runs provide a visual confirmation o
 
 A video from the final testing phase, displaying the agent's refined skills in balancing the pole on the cart without human intervention.
 
-[View Performance Video](assets/1000epoch.gif)
+![View Performance Video](assets/1000epoch.gif)
 
 ### Summary
 
