@@ -54,16 +54,20 @@ Boltzmann exploration strategically balances exploration and exploitation by mod
   def update_temperature(self):
     self.temperature = max(self.temperature * self.temperature_decay, self.temperature_min)
   ```
-
 ## Hyperparameter Impact 📉
 ### Experiment Setup
-This section examines how different temperature settings affect the learning dynamics and agent performance. Key hyperparameters include:
-- **`temperature_max`**: Determines initial exploration level.
-- **`temperature_min`**: Ensures sustained exploration throughout training.
-- **`temperature_decay`**: Modulates the reduction in exploration over time.
+Exploration of how different temperature settings influence the learning process and agent performance. The key parameters are:
+
+- **`temperature_max`**: The initial temperature value at the start of training, which determines the level of exploration. A higher `temperature_max` encourages more exploratory actions.
+- **`temperature_min`**: The minimum temperature value that the system will decay to, ensuring that exploration doesn't cease entirely. This parameter helps maintain a baseline level of exploration throughout training.
+- **`temperature_decay`**: The rate at which the temperature decreases over time. This decay rate controls how quickly the exploration level transitions to more exploitative behavior as training progresses.
+
+These parameters collectively influence the agent's ability to balance exploration of new actions and exploitation of known rewarding actions.
 
 ### Hyperparameter Settings
-Before diving into specific settings, it's essential to understand the influence of temperature on the likelihood of selecting actions. Higher temperatures equate to more random selections, enhancing exploration.
+
+Before setting the hyperparameters, let's look at impacts of different temperatures and chances of choosing different values.
+![boltzmann_effect.png](assets/boltzmann_effect.png)
 
 <table style="border-spacing: 80px; width: 100%;">
   <tr>
@@ -82,9 +86,7 @@ Before diving into specific settings, it's essential to understand the influence
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>10</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
-        <tr><td>temperature_decay</td><td>0.995</td
-
-></tr>
+        <tr><td>temperature_decay</td><td>0.995</td></tr>
       </table>
     </td>
   </tr>
@@ -110,5 +112,20 @@ Before diving into specific settings, it's essential to understand the influence
   </tr>
 </table>
 
+
+
+
+### Comparative Analysis of Results
+
+The table below presents a detailed comparison of how different temperature settings influence the agent's learning dynamics and performance. Each row corresponds to a hyperparameter set as described above, showcasing the outcomes through visual plots and a brief description of the training behavior and results.
+
+| Set | Description | Temperature Plot | Loss Plot | Reward Plot |
+|-----|-------------|------------------|-----------|-------------|
+| **Set 1** <br> High Initial Temperature | Starts at 1000, promoting extensive early exploration. As exploration decreases, noticeable stabilization and gradual improvements in performance occur, suggesting effective balancing of exploration with exploitation. | ![Temperature 1](assets/Hyperparameter_set_1/Temperature_plot.png) | ![Loss 1](assets/Hyperparameter_set_1/Loss_plot.png) | ![Reward 1](assets/Hyperparameter_set_1/reward_plot.png) |
+| **Set 2** <br> Moderate Initial Temperature | Starts at 10, fostering a balance from the beginning. Results in steady progress with less volatility in performance metrics compared to higher initial temperatures, indicating more consistent learning. | ![Temperature 2](assets/Hyperparameter_set_2/Temperature_plot.png) | ![Loss 2](assets/Hyperparameter_set_2/Loss_plot.png) | ![Reward 2](assets/Hyperparameter_set_2/reward_plot.png) |
+| **Set 3** <br> Low Initial Temperature | With an initial temperature of 0.1, the model is highly exploitative, limiting exploration which may hinder learning in complex scenarios and could not solve the problem but accelerates performance in simpler tasks or familiar environments. | ![Temperature 3](assets/Hyperparameter_set_3/Temperature_plot.png) | ![Loss 3](assets/Hyperparameter_set_3/Loss_plot.png) | ![Reward 3](assets/Hyperparameter_set_3/reward_plot.png) |
+| **Set 4** <br> Constant Temperature | Maintains a steady temperature of 1, ensuring consistent exploration. But did not resulted well in our problem. | ![Temperature 4](assets/Hyperparameter_set_4/Temperature_plot.png) | ![Loss 4](assets/Hyperparameter_set_4/Loss_plot.png) | ![Reward 4](assets/Hyperparameter_set_4/reward_plot.png) |
+
+
 ## Conclusions 📝
-From our experiments with Boltzmann exploration, the key takeaway is that appropriate temperature settings are crucial for balancing exploration and exploitation. High temperatures can be beneficial in complex environments where a broader exploration is necessary, while lower temperatures might suffice for simpler or well-understood environments. The findings emphasize the importance of tuning the temperature parameter to match the specific learning context and goals.
+Summary of key findings from the Boltzmann exploration experiments, highlighting optimal settings for different scenarios and the trade-offs between exploration and exploitation based on the temperature parameter.
