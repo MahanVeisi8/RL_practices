@@ -2,7 +2,8 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-P1I0lxPf2scs4ZyOFb0tostuokrdm-v?usp=sharing)
 [![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/downloads/release/python-380/)
-[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/your-username/your-repository/blob/main/requirements.txt)
+[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/MahanVeisi8
+/RL_practices/blob/main/requirements.txt)
 
 ## Introduction
 This repository contains the implementation of the Deep Q-Network (DQN) algorithm applied to the classic "Cart Pole" problem, which is a staple challenge in the field of reinforcement learning. Our project aims to demonstrate how DQN can effectively balance a pole on a moving cart through autonomous learning and decision-making processes.
