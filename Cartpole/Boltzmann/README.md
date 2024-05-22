@@ -67,13 +67,39 @@ Exploration of how different temperature settings influence the learning process
 
 These parameters collectively influence the agent's ability to balance exploration of new actions and exploitation of known rewarding actions.
 
+### Hyperparameter Settings
 
+**Set 1: High Exploration**
+| Parameter | Value |
+|-----------|-------|
+| `temperature_max` | 1000 |
+| `temperature_min` | 0.0001 |
+| `temperature_decay` | 0.995 |
 
-Here’s how you can structure the results section into a single table with four rows, each corresponding to a different set of temperature parameters, and five columns including descriptions and visuals for temperature, loss, and reward plots:
+**Set 2: Moderate Exploration**
+| Parameter | Value |
+|-----------|-------|
+| `temperature_max` | 10 |
+| `temperature_min` | 0.0001 |
+| `temperature_decay` | 0.995 |
 
-### Results
+**Set 3: Low Exploration**
+| Parameter | Value |
+|-----------|-------|
+| `temperature_max` | 0.1 |
+| `temperature_min` | 0.0001 |
+| `temperature_decay` | 0.995 |
 
-The table below presents a comprehensive analysis of how different temperature settings impact the training dynamics and agent performance in our DQN model. Each set varies in its initial exploration intensity and decay rate, affecting how the agent balances exploration with exploitation throughout the training episodes.
+**Set 4: Constant Temperature**
+| Parameter | Value |
+|-----------|-------|
+| `temperature_max` | 1 |
+| `temperature_min` | 0.0001 |
+| `temperature_decay` | 1 |
+
+### Comparative Analysis of Results
+
+The table below presents a detailed comparison of how different temperature settings influence the agent's learning dynamics and performance. Each row corresponds to a hyperparameter set as described above, showcasing the outcomes through visual plots and a brief description of the training behavior and results.
 
 | Set | Description | Temperature Plot | Loss Plot | Reward Plot |
 |-----|-------------|------------------|-----------|-------------|
