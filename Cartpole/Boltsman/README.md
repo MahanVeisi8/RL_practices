@@ -54,6 +54,14 @@ Detailed explanation of how Boltzmann exploration differs from epsilon-greedy st
         return action_probs
   ```
 - Temperature decay mechanism to adjust exploration intensity over time.
+  ```py
+  def update_temperature(self):
+        """
+        Decay temperature.
+        """
+        self.temperature = max(self.temperature * self.temperature_decay, self.temperature_min)
+  ```
+  
 
 ## Hyperparameter Impact 📉
 ### Experiment Setup
