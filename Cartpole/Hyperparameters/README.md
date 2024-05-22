@@ -38,24 +38,6 @@ For each learning rate, we have documented how the changes affect the training d
 
 These plots are crucial for understanding the trade-offs between exploration and exploitation as moderated by the learning rate, offering visual insights into how each setting affects the model's learning efficiency and overall performance.
 
-
-#### Impact on Performance
-- **Learning Rate 1e-2:** Exhibited faster convergence but was prone to instability in later episodes. This setting showed high variability in reward accumulation per episode, indicating potentially aggressive updates.
-- **Learning Rate 1e-4:** Offered a balance between stability and convergence speed. The model demonstrated steady improvement in performance over time, achieving higher average rewards per episode without significant fluctuations.
-- **Learning Rate 1e-6:** Resulted in very slow progress with minimal improvements in episode rewards. This rate was too conservative, leading to insufficient updates and slow learning.
-
-#### Visual Analysis
-For each learning rate, we plotted the evolution of episode rewards, loss metrics, and the epsilon decay to visually assess the learning process. These plots are crucial for understanding the trade-offs between exploration and exploitation as moderated by the learning rate.
-
-Below are the plots showcasing the evolution of episode rewards and loss metrics for each learning rate. These visual comparisons help to understand the trade-offs between exploration and exploitation as moderated by the learning rate.
-
-| Learning Rate | Loss Plot                          | Reward Plot                        |
-|---------------|------------------------------------|------------------------------------|
-| **1e-2**      | ![Loss 1e-2](assets/Learning_rate/1e-2/Loss_plot.png) | ![Reward 1e-2](assets/Learning_rate/1e-2/reward_plot.png) |
-| **1e-4**      | ![Loss 1e-4](assets/Learning_rate/1e-4/Loss_plot.png) | ![Reward 1e-4](assets/Learning_rate/1e-4/reward_plot.png) |
-| **1e-6**      | ![Loss 1e-6](assets/Learning_rate/1e-6/Loss_plot.png) | ![Reward 1e-6](assets/Learning_rate/1e-6/reward_plot.png) |
-
-
 #### Conclusion
 The analysis clearly shows that a medium learning rate (1e-4) is optimal for this particular setting, providing a good compromise between learning speed and stability. Both the overly high and overly low learning rates led to suboptimal learning, with either instability or inadequate learning progress.
 
