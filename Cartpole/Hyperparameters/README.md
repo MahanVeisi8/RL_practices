@@ -26,8 +26,6 @@ Overview of the methodology for testing different hyperparameter settings and th
 
 The learning rate is a critical hyperparameter in training deep learning models, influencing the speed and stability of the learning process. In this analysis, we experiment with three different learning rates: `1e-2`, `1e-4`, and `1e-6`, to observe their effects on the training dynamics and performance of our DQN model applied to the Cart Pole problem.
 
-#### Experimental Setup
-Each learning rate was tested under identical conditions, with the model trained over 1000 episodes. The experiments were conducted in isolated directories to ensure that results from one do not impact another, providing a clean and controlled environment for each test.
 
 #### Visual Analysis and Performance Impact
 
@@ -67,9 +65,6 @@ This analysis underscores the necessity of carefully tuning the discount factor 
 ### **Update Frequency Variations**
 
 Update frequency in a reinforcement learning setting determines how often the target network is updated with weights from the main network. Adjusting this frequency can impact the learning stability and convergence rate. We evaluated three different update frequencies—5, 50, and 100—to explore their effects on the dynamics and success of our DQN model in solving the Cart Pole problem.
-
-#### Experimental Setup
-The model was trained under identical conditions for 1000 episodes for each set update frequency, with each experiment conducted in separate directories to maintain the integrity of the results.
 
 #### Visual Analysis and Performance Impact
 The update frequency in reinforcement learning models impacts how often the target network updates with weights from the evaluation network. We tested three different update frequencies—5, 50, and 100—to determine their effects on training stability and performance in the Cart Pole problem.
