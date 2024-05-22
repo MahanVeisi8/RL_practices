@@ -59,7 +59,14 @@ Detailed explanation of how Boltzmann exploration differs from epsilon-greedy st
 
 ## Hyperparameter Impact 📉
 ### Experiment Setup
-Exploration of how different temperature settings (`temperature_max`, `temperature_min`, `temperature_decay`) influence the learning process and agent performance.
+Exploration of how different temperature settings influence the learning process and agent performance. The key parameters are:
+
+- **`temperature_max`**: The initial temperature value at the start of training, which determines the level of exploration. A higher `temperature_max` encourages more exploratory actions.
+- **`temperature_min`**: The minimum temperature value that the system will decay to, ensuring that exploration doesn't cease entirely. This parameter helps maintain a baseline level of exploration throughout training.
+- **`temperature_decay`**: The rate at which the temperature decreases over time. This decay rate controls how quickly the exploration level transitions to more exploitative behavior as training progresses.
+
+These parameters collectively influence the agent's ability to balance exploration of new actions and exploitation of known rewarding actions.
+
 
 ### Results
 Visual presentation and analysis of the impacts of various temperature parameters on agent training dynamics and performance, with plots for:
