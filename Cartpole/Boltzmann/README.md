@@ -55,7 +55,6 @@ Detailed explanation of how Boltzmann exploration differs from epsilon-greedy st
   def update_temperature(self):
         self.temperature = max(self.temperature * self.temperature_decay, self.temperature_min)
   ```
-  
 
 ## Hyperparameter Impact 📉
 ### Experiment Setup
