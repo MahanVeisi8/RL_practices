@@ -21,7 +21,8 @@ Welcome to our comprehensive exploration of how various hyperparameters influenc
 
 
 ## Setup 🛠️
-Here's the improtant libraries that you should install for this project if you want to explore the project on your own.
+**Running the Notebook in Google Colab**
+- The notebook is designed for easy execution in Google Colab, requiring no additional setup other than a Google account and internet access.😊
 
 ### Prerequisites
 Ensure these packages are installed to run the project locally:
