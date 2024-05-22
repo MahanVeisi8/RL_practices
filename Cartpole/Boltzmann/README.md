@@ -28,6 +28,7 @@ pip install gymnasium torch matplotlib renderlab
 Ensure all necessary libraries, including PyTorch, Gymnasium, and others, are imported for the project.
 
 ## Boltzmann Exploration 🔍
+![boltzmann_formula](assets/boltzmann_formula.png)
 Detailed explanation of how Boltzmann exploration differs from epsilon-greedy strategies that we used in the previous practices, including:
 - Initialization changes: Removal of epsilon parameters and introduction of temperature-related parameters.
 - Action selection modifications to utilize the Boltzmann distribution.
