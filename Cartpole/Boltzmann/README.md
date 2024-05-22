@@ -69,19 +69,48 @@ These parameters collectively influence the agent's ability to balance explorati
 
 ### Hyperparameter Settings
 
-**Set 1: High Exploration** | **Set 2: Moderate Exploration**
-|-----------|-------| |-----------|-------|
-| Parameter | Value | | Parameter | Value |
-| `temperature_max` | 1000 | | `temperature_max` | 10 |
-| `temperature_min` | 0.0001 | | `temperature_min` | 0.0001 |
-| `temperature_decay` | 0.995 | | `temperature_decay` | 0.995 |
-
-**Set 3: Low Exploration** | **Set 4: Constant Temperature**
-|-----------|-------| |-----------|-------|
-| Parameter | Value | | Parameter | Value |
-| `temperature_max` | 0.1 | | `temperature_max` | 1 |
-| `temperature_min` | 0.0001 | | `temperature_min` | 0.0001 |
-| `temperature_decay` | 0.995 | | `temperature_decay` | 1 |
+<table>
+  <tr>
+    <td>
+      <strong>Set 1: High Exploration</strong>
+      <table>
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>temperature_max</td><td>1000</td></tr>
+        <tr><td>temperature_min</td><td>0.0001</td></tr>
+        <tr><td>temperature_decay</td><td>0.995</td></tr>
+      </table>
+    </td>
+    <td>
+      <strong>Set 2: Moderate Exploration</strong>
+      <table>
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>temperature_max</td><td>10</td></tr>
+        <tr><td>temperature_min</td><td>0.0001</td></tr>
+        <tr><td>temperature_decay</td><td>0.995</td></tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Set 3: Low Exploration</strong>
+      <table>
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>temperature_max</td><td>0.1</td></tr>
+        <tr><td>temperature_min</td><td>0.0001</td></tr>
+        <tr><td>temperature_decay</td><td>0.995</td></tr>
+      </table>
+    </td>
+    <td>
+      <strong>Set 4: Constant Temperature</strong>
+      <table>
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>temperature_max</td><td>1</td></tr>
+        <tr><td>temperature_min</td><td>0.0001</td></tr>
+        <tr><td>temperature_decay</td><td>1</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 
 
