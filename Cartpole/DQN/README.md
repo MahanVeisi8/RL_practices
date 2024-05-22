@@ -22,92 +22,48 @@ pip install renderlab
 
 
 ## Implementing DQN Components
-The DQN model in this project is structured into several critical components, each designed to handle specific aspects of the reinforcement learning process:
+
+This section provides a detailed explanation of the DQN model's architecture, divided into several key components each responsible for a specific part of the learning process:
 
 ### Replay Memory Class
-The `ReplayMemory` class is essential for the efficient training of deep reinforcement learning models. It stores the agent's experiences in a way that minimizes the correlation between consecutive learning samples, allowing for more stable and reliable learning outcomes.
 
-```python
-class ReplayMemory:
-    def __init__(self, capacity):
-        self.capacity = capacity
-        self.buffer = deque(maxlen=capacity)
+The `ReplayMemory` class efficiently manages and stores experiences, minimizing correlations between consecutive learning samples, which is crucial for the stability of our learning algorithms.
 
-    def push(self, state, action, reward, next_state, done):
-        self.buffer.append((state, action, reward, next_state, done))
-
-    def sample(self, batch_size):
-        return random.sample(self.buffer, batch_size)
-
-    def __len__(self):
-        return len(self.buffer)
-```
+- **__init__(self, capacity)**: Initialize the memory buffer with a fixed size.
+- **store(self, state, action, next_state, reward, done)**: Store new experiences in the memory.
+- **sample(self, batch_size)**: Randomly sample a batch of experiences for training.
+- **__len__(self)**: Return the current number of experiences stored.
 
 ### DQN Network Class
-The `DQN_Network` class defines the architecture of the neural network that learns to estimate Q-values for all possible actions given the current state. This function approximation is crucial for the agent to decide which action to take.
 
-```python
-class DQN_Network(nn.Module):
-    def __init__(self, input_dim, output_dim):
-        super(DQN_Network, self).__init__()
-        self.fc1 = nn.Linear(input_dim, 64)
-        self.fc2 = nn.Linear(64, 64)
-        self.fc3 = nn.Linear(64, output_dim)
+The `DQN_Network` class defines the neural network architecture for approximating the Q-function, crucial for evaluating the best action to take in a given state.
 
-    def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        return self.fc3(x)
-```
+- **__init__(self, input_dim, num_actions)**: Setup the layers of the network with specified input dimensions and number of actions.
+- **forward(self, x)**: Define the forward pass to compute Q-values from the state inputs.
+- **_initialize_weights(self)**: Initialize network weights using appropriate schemes to ensure effective learning.
 
 ### DQN Agent Class
-The `DQN_Agent` class orchestrates the learning process, handling the interactions between the model predictions and the environment. It uses an epsilon-greedy policy for action selection, balancing between exploration and exploitation.
 
-```python
-class DQN_Agent:
-    def __init__(self, state_size, action_size, replay_memory):
-        self.state_size = state_size
-        self.action_size = action_size
-        self.memory = replay_memory
-        self.model = DQN_Network(state_size, action_size)
-        self.epsilon = 1.0  # Starting epsilon for the epsilon-greedy policy
+The `DQN_Agent` orchestrates the learning process, manages interactions with the environment, and updates network parameters based on the observed experiences.
 
-    def select_action(self, state):
-        if random.random() < self.epsilon:
-            return random.randint(0, self.action_size-1)
-        else:
-            return self.model(state).argmax().item()
-
-    def train(self, batch_size):
-        if len(self.memory) < batch_size:
-            return
-        batch = self.memory.sample(batch_size)
-        # Training steps implementation goes here
-```
+- **__init__(self, env, epsilon_max, epsilon_min, epsilon_decay, learning_rate, discount, memory_capacity)**: Configure agent with environment, learning parameters, and exploration settings.
+- **select_action(self, state)**: Select an action using epsilon-greedy policy based on current Q-values.
+- **learn(self, batch_size)**: Perform a learning update using a batch of sampled experiences from memory.
+- **update_epsilon(self)**: Adjust the epsilon value for the epsilon-greedy policy to balance exploration and exploitation.
+- **save(self, path)**: Save the current state of the network to a file.
+- **hard_update(self)**: Synchronize the weights of the target network with the main network.
 
 ### Model TrainTest Class
-This class manages the full lifecycle of model training and testing. It sets up the environment, processes each episode, and evaluates the agent's performance over time, providing valuable insights into the model's effectiveness.
 
-```python
-class Model_TrainTest:
-    def __init__(self, agent, env):
-        self.agent = agent
-        self.env = env
+The `Model_TrainTest` class manages the training and testing processes, setting up the environment, and executing the training cycles according to specified hyperparameters.
 
-    def train(self, episodes):
-        for e in range(episodes):
-            state = self.env.reset()
-            while True:
-                action = self.agent.select_action(state)
-                next_state, reward, done, _ = self.env.step(action)
-                self.agent.memory.push(state, action, reward, next_state, done)
-                state = next_state
-                if done:
-                    break
-            self.agent.update_epsilon()  # Decrease epsilon
-            self.agent.train(32)  # Train with a batch of experiences
-```
+- **__init__(self, agent, env, hyperparams)**: Initialize with an agent, environment, and training/testing settings.
+- **state_preprocess(self, state)**: Process raw state information from the environment to fit the network input requirements.
+- **train(self)**: Run the training loop, collecting data, updating the agent, and logging results.
+- **test(self, max_episodes)**: Evaluate the agent's performance on unseen data without exploration moves.
+- **plot_training(self)**: Generate and save plots of rewards, losses, and other metrics to visualize the training progress.
 
+This structured approach ensures each component of the DQN model is focused, testable, and maintains clear responsibilities, facilitating easier debugging and improvements.
 
 
 #### State Preprocessing
