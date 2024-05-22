@@ -27,9 +27,6 @@ pip install gymnasium torch matplotlib renderlab
 **Importing Libraries**
 Ensure all necessary libraries, including PyTorch, Gymnasium, and others, are imported for the project.
 
-**GPU Setup and Reproducibility**
-Setup for GPU utilization (if available) and reproducibility settings are detailed to ensure consistent results across runs.
-
 ## Boltzmann Exploration 🔍
 Detailed explanation of how Boltzmann exploration differs from epsilon-greedy strategies, including:
 - Initialization changes: Removal of epsilon parameters and introduction of temperature-related parameters.
