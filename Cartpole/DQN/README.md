@@ -108,12 +108,12 @@ Shows the decrease in epsilon value, reflecting the transition from exploration 
 #### Loss Plot
 Illustrates the changes in learning loss over time, which provides insights into the network's learning efficiency and convergence behavior.
 
-![Loss Plot](path-to-loss-plot.png)
+![Loss Plot](assets/Loss_plot.png)
 
 #### Reward Plot
 Captures the total rewards accumulated by the agent in each episode, offering a direct measure of performance and the agent's ability to maintain the pole's balance over time.
 
-![Reward Plot](path-to-reward-plot.png)
+![Reward Plot](assets/reward_plot.png)
 
 ### Testing Phase
 
@@ -131,7 +131,7 @@ Animated GIFs and video sequences from test runs provide a visual confirmation o
 
 A video from the final testing phase, displaying the agent's refined skills in balancing the pole on the cart without human intervention.
 
-[View Performance Video](link-to-video)
+[View Performance Video](assets/1000epoch.gif)
 
 ### Summary
 
