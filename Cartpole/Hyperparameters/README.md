@@ -10,6 +10,9 @@ This repository explores the impact of various hyperparameters on the performanc
 ## Setup
 Details on setting up the environment, installing required libraries, and running the notebook in Google Colab.
 
+#### Experimental Setup
+Each set of hyperparameter was examined under identical training conditions over 1000 episodes, with each variant run in its dedicated directory to prevent overlap and ensure consistency in the experimental conditions.
+
 ### Prerequisites
 To run this project locally, ensure you have the following Python packages installed:
 ```bash
@@ -44,9 +47,6 @@ The analysis clearly shows that a medium learning rate (1e-4) is optimal for thi
 ### **Discount Factor Variations**
 
 The discount factor is another essential hyperparameter in reinforcement learning that determines the importance given to future rewards. By testing different discount factors: `0.997`, `0.97`, and `0.9`, we investigate their impact on the learning behavior and the overall performance of our DQN model trained on the Cart Pole problem.
-
-#### Experimental Setup
-Each discount factor was examined under identical training conditions over 1000 episodes, with each variant run in its dedicated directory to prevent overlap and ensure consistency in the experimental conditions.
 
 #### Visual Analysis and Performance Impact
 
