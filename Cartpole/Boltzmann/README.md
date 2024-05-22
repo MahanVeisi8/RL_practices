@@ -69,11 +69,11 @@ These parameters collectively influence the agent's ability to balance explorati
 
 ### Hyperparameter Settings
 
-<table style="border-spacing: 40px; width: 100%;">
+<table style="border-spacing: 80px; width: 100%;">
   <tr>
     <td style="vertical-align: top;">
       <strong>Set 1: High Exploration</strong>
-      <table style="width: 100%; border: 5px solid black; padding: 30px;">
+      <table style="width: 100%; border: 15px solid black; padding: 50px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>1000</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
@@ -82,7 +82,7 @@ These parameters collectively influence the agent's ability to balance explorati
     </td>
     <td style="vertical-align: top;">
       <strong>Set 2: Moderate Exploration</strong>
-      <table style="width: 100%; border: 5px solid black; padding: 30px;">
+      <table style="width: 100%; border: 15px solid black; padding: 50px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>10</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
@@ -93,7 +93,7 @@ These parameters collectively influence the agent's ability to balance explorati
   <tr>
     <td style="vertical-align: top;">
       <strong>Set 3: Low Exploration</strong>
-      <table style="width: 100%; border: 5px solid black; padding: 30px;">
+      <table style="width: 100%; border: 15px solid black; padding: 50px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>0.1</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
@@ -102,7 +102,7 @@ These parameters collectively influence the agent's ability to balance explorati
     </td>
     <td style="vertical-align: top;">
       <strong>Set 4: Constant Temperature</strong>
-      <table style="width: 100%; border: 5px solid black; padding: 30px;">
+      <table style="width: 100%; border: 15px solid black; padding: 50px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>1</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
