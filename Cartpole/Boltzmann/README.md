@@ -5,7 +5,7 @@
 [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)]()
 
 ## Introduction 🚀
-This repository provides an implementation of Boltzmann exploration within Deep Q-Networks (DQN) for the Cart Pole problem. Boltzmann exploration, unlike the epsilon-greedy method, offers a probabilistic approach to action selection. It utilizes the "temperature" parameter to adjust the probability of selecting actions based on their Q-values, aiming for a more effective exploration-exploitation balance.
+This repository provides an implementation of Boltzmann exploration within Deep Q-Networks (DQN) for the Cart Pole problem. Boltzmann exploration, unlike the epsilon-greedy method, offers a probabilistic approach to action selection. It utilizes the **`temperature`** parameter to adjust the probability of selecting actions based on their Q-values, aiming for a more effective exploration-exploitation balance.
 
 ## Table of Contents
 - [Setup](#setup)
