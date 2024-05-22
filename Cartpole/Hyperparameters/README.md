@@ -19,7 +19,7 @@ pip install gymnasium torch matplotlib renderlab
 ## Hyperparameter Impact Analysis
 Overview of the methodology for testing different hyperparameter settings and the rationale behind selecting specific values.
 
-### Learning Rate Variations
+### **Learning Rate Variations**
 
 The learning rate is a critical hyperparameter in training deep learning models, influencing the speed and stability of the learning process. In this analysis, we experiment with three different learning rates: `1e-2`, `1e-4`, and `1e-6`, to observe their effects on the training dynamics and performance of our DQN model applied to the Cart Pole problem.
 
