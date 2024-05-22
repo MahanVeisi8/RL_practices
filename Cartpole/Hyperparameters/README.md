@@ -1,26 +1,39 @@
-# DQN Hyperparameter Analysis
+# DQN Hyperparameter Analysis 📊
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JLVm4wdrtjpMiQP_3SmdOhWjX1hhFLP8?usp=sharing)
 [![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/downloads/release/python-380/)
 [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/MahanVeisi8/RL_practices/Cartpole/DQN/requirements.txt)
 
-## Introduction
-This repository explores the impact of various hyperparameters on the performance of the Deep Q-Network (DQN) applied to the Cart Pole problem. Through systematic experiments, we analyze how learning rate, discount factor, and update frequency affect the model's learning efficiency and policy stability.
+## Table of Contents
+- [Introduction](#introduction)
+- [Setup](#setup)
+  - [Experimental Setup](#experimental-setup)
+  - [Prerequisites](#prerequisites)
+- [Hyperparameter Impact Analysis](#hyperparameter-impact-analysis)
+  - [Learning Rate Variations](#learning-rate-variations)
+  - [Discount Factor Variations](#discount-factor-variations)
+  - [Update Frequency Variations](#update-frequency-variations)
+- [Results and Discussion](#results-and-discussion)
+- [Conclusions](#conclusions)
 
-## Setup
-Details on setting up the environment, installing required libraries, and running the notebook in Google Colab.
+## Introduction 🚀
+Welcome to our comprehensive exploration of how various hyperparameters influence the effectiveness of the Deep Q-Network (DQN) when tackling the classic Cart Pole problem. This documentation dives deep into the effects of learning rate, discount factor, and update frequency on the model's efficiency and stability, providing actionable insights through detailed experimentation.
 
-#### Experimental Setup
-Each set of hyperparameter was examined under identical training conditions over 1000 episodes, with each variant run in its dedicated directory to prevent overlap and ensure consistency in the experimental conditions.
+
+## Setup 🛠️
+Here's the improtant libraries that you should install for this project if you want to explore the project on your own.
 
 ### Prerequisites
-To run this project locally, ensure you have the following Python packages installed:
+Ensure these packages are installed to run the project locally:
 ```bash
 pip install gymnasium torch matplotlib renderlab
 ```
 
-## Hyperparameter Impact Analysis
-Overview of the methodology for testing different hyperparameter settings and the rationale behind selecting specific values.
+### Experimental Setup
+Each hyperparameter was rigorously tested over 1000 episodes in isolated conditions to ensure precise and reproducible results.
+
+## Hyperparameter Impact Analysis 🔬
+This section details our methodical approach to testing and the reasoning behind our choice of hyperparameter values.
 
 ### **Learning Rate Variations**
 
@@ -59,7 +72,7 @@ The following table provides a detailed view of how different discount factors i
 These observations reveal that the choice of discount factor significantly affects the strategic balance between short-term gains and long-term rewards, with mid-range values often providing the most balanced approach.
 
 #### Conclusion
-This analysis underscores the necessity of carefully tuning the discount factor according to the specific requirements and goals of the learning task. While a higher discount factor can drive the model to achieve optimal performance by focusing on future rewards, it might require careful handling to avoid instability. Conversely, a lower discount factor can enhance early learning but at the cost of long-term performance, which might be crucial for complex tasks requiring foresighted strategies.
+A balanced discount factor (0.97) facilitates the most effective learning by harmonizing short-term actions with long-term goals.
 
 
 ### **Update Frequency Variations**
@@ -79,10 +92,5 @@ The update frequency in reinforcement learning models impacts how often the targ
 These results illustrate that a higher update frequency (e.g., 5) can lead to quicker learning and faster achievement of training goals, such as early stopping criteria, which are indicative of a successful learning process. On the other hand, lower frequencies (50 and 100) struggle to achieve similar results within the same number of training episodes, leading to prolonged learning periods without significant gains in performance.
 
 
-## Results and Discussion
-Detailed presentation of the training and testing results with comprehensive visual data illustrating trends and key findings.
-
-## Conclusions
-Summary of the insights gained from the hyperparameter analysis, including recommendations for choosing optimal settings for similar reinforcement learning tasks.
-
-
+## Conclusions 📝
+Our hyperparameter study reveals critical insights into setting up DQN for optimal performance. Optimal choices depend heavily on the specific challenges and goals of the reinforcement learning task. Adjusting these parameters can profoundly affect learning speed, stability, and success
