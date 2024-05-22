@@ -64,11 +64,27 @@ These observations reveal that the choice of discount factor significantly affec
 This analysis underscores the necessity of carefully tuning the discount factor according to the specific requirements and goals of the learning task. While a higher discount factor can drive the model to achieve optimal performance by focusing on future rewards, it might require careful handling to avoid instability. Conversely, a lower discount factor can enhance early learning but at the cost of long-term performance, which might be crucial for complex tasks requiring foresighted strategies.
 
 
-### Discount Factor Adjustments
-Investigation into the influence of discount factor variations on the long-term reward strategy of the DQN agent.
+### **Update Frequency Variations**
 
-### Update Frequency Modifications
-Analysis of how different frequencies for updating the target network impact the convergence and performance of the agent.
+Update frequency in a reinforcement learning setting determines how often the target network is updated with weights from the main network. Adjusting this frequency can impact the learning stability and convergence rate. We evaluated three different update frequencies—5, 50, and 100—to explore their effects on the dynamics and success of our DQN model in solving the Cart Pole problem.
+
+#### Experimental Setup
+The model was trained under identical conditions for 1000 episodes for each set update frequency, with each experiment conducted in separate directories to maintain the integrity of the results.
+
+#### Visual Analysis and Performance Impact
+
+Below, we present a detailed analysis of how varying the update frequency affects the learning process. The tables include succinct descriptions with accompanying plots of the loss and rewards, illustrating the outcomes for each frequency setting.
+
+| Update Frequency | Description                                                                                                                                  | Loss Plot                                                             | Reward Plot                                                           |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **5**            | Rapid updates resulted in faster learning initially but caused some fluctuations in performance due to potential overfitting to recent data.  | ![Loss Frequency 5](assets/Update_frequency/5/Loss_plot.png)          | ![Reward Frequency 5](assets/Update_frequency/5/reward_plot.png)      |
+| **50**           | Moderate frequency supported consistent learning, showing smoother convergence and stability throughout the training episodes.                | ![Loss Frequency 50](assets/Update_frequency/50/Loss_plot.png)        | ![Reward Frequency 50](assets/Update_frequency/50/reward_plot.png)    |
+| **100**          | Infrequent updates slowed down learning significantly, leading to a gradual but steady improvement without drastic swings in performance.      | ![Loss Frequency 100](assets/Update_frequency/100/Loss_plot.png)      | ![Reward Frequency 100](assets/Update_frequency/100/reward_plot.png)  |
+
+These results elucidate the relationship between update frequency and learning behavior, showcasing that while more frequent updates can accelerate initial learning, they may lead to instability. Conversely, less frequent updates promote stability but at the cost of slower adaptation to the environment.
+
+#### Conclusion
+The examination of different update frequencies demonstrates that the choice of frequency can be crucial in balancing the speed of learning against the stability of the training process. A middle-ground frequency (e.g., 50) often yields a robust learning curve, facilitating consistent improvements without the risk of significant performance drops or slow progress. This insight is vital for tuning deep reinforcement learning models to achieve both efficient learning and stable performance.
 
 ## Results and Discussion
 Detailed presentation of the training and testing results with comprehensive visual data illustrating trends and key findings.
