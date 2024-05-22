@@ -5,7 +5,22 @@
 [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/your-username/your-repository/blob/main/requirements.txt)
 
 ## Introduction
-This repository contains the implementation of the Deep Q-Network (DQN) algorithm applied to the classic "Cart Pole" problem, which is a staple challenge in the field of reinforcement learning. The objective is to develop a model that can autonomously balance a pole on a moving cart, demonstrating the capabilities of DQN in maintaining system equilibrium.
+This repository contains the implementation of the Deep Q-Network (DQN) algorithm applied to the classic "Cart Pole" problem, which is a staple challenge in the field of reinforcement learning. Our project aims to demonstrate how DQN can effectively balance a pole on a moving cart through autonomous learning and decision-making processes.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+- [Implementing DQN Components](#implementing-dqn-components)
+  - [Replay Memory Class](#replay-memory-class)
+  - [DQN Network Class](#dqn-network-class)
+  - [DQN Agent Class](#dqn-agent-class)
+  - [Model TrainTest Class](#model-traintest-class)
+- [Results and Performance Analysis](#results-and-performance-analysis)
+  - [Training Progress](#training-progress)
+  - [Testing Phase](#testing-phase)
+  - [Visualizing Agent Performance](#visualizing-agent-performance)
+  - [Summary](#summary)
 
 ## Setup
 The code is designed to run in a Python environment with essential machine learning and simulation libraries. You can execute the notebook directly in Google Colab using the badge link provided, which includes a pre-configured environment with all necessary dependencies.
