@@ -79,19 +79,17 @@ class DQN_Agent:
 The `Model_TrainTest` class manages the training and testing processes, setting up the environment, and executing the training cycles according to specified hyperparameters.
 
 ```py
-class DQN_Agent:
-    def __init__(self, env, epsilon_max, epsilon_min, epsilon_decay, learning_rate, discount, memory_capacity):
-        # Configure agent with environment, learning parameters, and exploration settings.
-    def select_action(self, state):
-        # Select an action using epsilon-greedy policy based on current Q-values.
-    def learn(self, batch_size):
-        # Perform a learning update using a batch of sampled experiences from memory.
-    def update_epsilon(self):
-        # Adjust the epsilon value for the epsilon-gready policy to balance exploration and exploitation.
-    def save(self, path):
-        # Save the current state of the network to a file.
-    def hard_update(self):
-        # Synchronize the weights of the target network with the main network.
+class Model_TrainTest:
+    def __init__(self, agent, env, hyperparams):
+        # Initialize with an agent, environment, and training/testing settings.
+    def state_preprocess(self, state):
+        # Process raw state information from the environment to fit the network input requirements.
+    def train(self):
+        # Run the training loop, collecting data, updating the agent, and logging results.
+    def test(self, max_episodes):
+        # Evaluate the agent's performance on unseen data without exploration moves.
+    def plot_training(self):
+        # Generate and save plots of rewards, losses, and other metrics to visualize the training progress.
 ```
 
 
