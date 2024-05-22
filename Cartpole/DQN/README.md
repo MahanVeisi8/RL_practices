@@ -125,9 +125,9 @@ Animated GIFs and video sequences from test runs provide a visual confirmation o
 
 <table>
   <tr>
-    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="280px"></td>
-    <td>Epoch 500<br><img src="assets/500epoch.gif" alt="Epoch 500 Performance" width="280px"></td>
-    <td>Epoch 1000<br><img src="assets/1000epoch.gif" alt="Epoch 1000 Performance" width="280px"></td>
+    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 500<br><img src="assets/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
   </tr>
 </table>
 
