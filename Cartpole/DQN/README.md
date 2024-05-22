@@ -29,6 +29,16 @@ This section provides a detailed explanation of the DQN model's architecture, di
 
 The `ReplayMemory` class efficiently manages and stores experiences, minimizing correlations between consecutive learning samples, which is crucial for the stability of our learning algorithms.
 
+```py
+    def __init__(self, capacity):
+        # Initialize the memory buffer with a fixed size.
+    def push(self, state, action, reward, next_state, done):
+        # Store new experiences in the memory.
+    def sample(self, batch_size):
+        # Randomly sample a batch of experiences for training.
+    def __len__(self):
+        # Return the current number of experiences stored.
+```
 - **__init__(self, capacity)**: Initialize the memory buffer with a fixed size.
 - **store(self, state, action, next_state, reward, done)**: Store new experiences in the memory.
 - **sample(self, batch_size)**: Randomly sample a batch of experiences for training.
