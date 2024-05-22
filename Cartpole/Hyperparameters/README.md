@@ -26,6 +26,19 @@ The learning rate is a critical hyperparameter in training deep learning models,
 #### Experimental Setup
 Each learning rate was tested under identical conditions, with the model trained over 1000 episodes. The experiments were conducted in isolated directories to ensure that results from one do not impact another, providing a clean and controlled environment for each test.
 
+#### Visual Analysis and Performance Impact
+
+For each learning rate, we have documented how the changes affect the training dynamics and performance outcomes. The tables below include descriptions alongside corresponding plots for loss and rewards, providing a comprehensive view of the impact each learning rate has on the learning process.
+
+| Learning Rate | Description                                                                                                                                                                 | Loss Plot                                                    | Reward Plot                                                  |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|
+| **1e-2**      | Exhibited faster convergence but was prone to instability in later episodes, with high variability in reward accumulation, indicating potentially aggressive updates.       | ![Loss 1e-2](assets/Learning_rate/1e-2/Loss_plot.png)        | ![Reward 1e-2](assets/Learning_rate/1e-2/reward_plot.png)    |
+| **1e-4**      | Offered a balance between stability and convergence speed. The model demonstrated steady improvement, achieving higher average rewards per episode without significant fluctuations. | ![Loss 1e-4](assets/Learning_rate/1e-4/Loss_plot.png)        | ![Reward 1e-4](assets/Learning_rate/1e-4/reward_plot.png)    |
+| **1e-6**      | Resulted in very slow progress with minimal improvements in episode rewards. This rate was too conservative, leading to insufficient updates and slow learning.                | ![Loss 1e-6](assets/Learning_rate/1e-6/Loss_plot.png)        | ![Reward 1e-6](assets/Learning_rate/1e-6/reward_plot.png)    |
+
+These plots are crucial for understanding the trade-offs between exploration and exploitation as moderated by the learning rate, offering visual insights into how each setting affects the model's learning efficiency and overall performance.
+
+
 #### Impact on Performance
 - **Learning Rate 1e-2:** Exhibited faster convergence but was prone to instability in later episodes. This setting showed high variability in reward accumulation per episode, indicating potentially aggressive updates.
 - **Learning Rate 1e-4:** Offered a balance between stability and convergence speed. The model demonstrated steady improvement in performance over time, achieving higher average rewards per episode without significant fluctuations.
