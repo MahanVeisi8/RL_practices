@@ -33,15 +33,7 @@ Detailed explanation of how Boltzmann exploration differs from epsilon-greedy st
 - Initialization changes: Removal of epsilon parameters and introduction of temperature-related parameters.
 - Action selection modifications to utilize the Boltzmann distribution.
   ```py
-      def select_action(self, state):
-        """
-        Select an action using Boltzmann exploration.
-        """
-        action_probs = self.get_action_probs(state)
-        action = np.random.choice(len(action_probs), p=action_probs)
-        return action
-
-    def get_action_probs(self, state):
+      def get_action_probs(self, state):
         """
         Get action probabilities using Boltzmann distribution.
         """
@@ -50,6 +42,14 @@ Detailed explanation of how Boltzmann exploration differs from epsilon-greedy st
             action_values = Q_values / self.temperature
             action_probs = torch.softmax(action_values, dim=-1).cpu().numpy()
         return action_probs
+  
+      def select_action(self, state):
+        """
+        Select an action using Boltzmann exploration.
+        """
+        action_probs = self.get_action_probs(state)
+        action = np.random.choice(len(action_probs), p=action_probs)
+        return action
   ```
 - Temperature decay mechanism to adjust exploration intensity over time.
   ```py
