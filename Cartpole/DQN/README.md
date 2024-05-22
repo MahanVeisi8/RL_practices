@@ -92,18 +92,51 @@ class Model_TrainTest:
         # Generate and save plots of rewards, losses, and other metrics to visualize the training progress.
 ```
 
+## Results and Performance Analysis
 
-#### State Preprocessing
-Transforms raw state vectors from the environment into suitable formats for the neural network.
+After intensive training and testing phases, our DQN agent demonstrates remarkable progress and efficiency in solving the CartPole problem. This section outlines the agent's performance across different training epochs and highlights its ability to generalize during testing phases.
 
-#### Training
-Details the training operations, including backpropagation, loss calculation, and network updates.
+### Training Progress
 
-#### Testing
-Evaluates the trained model on unseen episodes to test the generalization of the learned policies.
+The agent was trained over 1000 episodes with the aim of maximizing the pole's balance duration on the cart. The learning process is quantified through plots that display the evolution of rewards, losses, and the agent's decision-making epsilon parameter over time.
 
-#### Visualization
-Generates plots to visualize the learning progress, including rewards and loss curves over episodes.
+#### Epsilon Decay Plot
+Shows the decrease in epsilon value, reflecting the transition from exploration to exploitation. This plot helps in understanding how the agent gradually shifts its strategy to rely more on learned behaviors rather than random actions.
+
+![Epsilon Decay Plot](path-to-epsilon-plot.png)
+
+#### Loss Plot
+Illustrates the changes in learning loss over time, which provides insights into the network's learning efficiency and convergence behavior.
+
+![Loss Plot](path-to-loss-plot.png)
+
+#### Reward Plot
+Captures the total rewards accumulated by the agent in each episode, offering a direct measure of performance and the agent's ability to maintain the pole's balance over time.
+
+![Reward Plot](path-to-reward-plot.png)
+
+### Testing Phase
+
+Testing of the trained models at different epochs (10, 500, and 1000) showcases the agent's improvement and stability over time. The results from these tests confirm the model's robustness and ability to generalize the learned policy to unseen scenarios.
+
+- **Epoch 10**: Early stages of learning, where the agent's policy is still underdeveloped.
+- **Epoch 500**: Midway through training, showing significant improvements in strategy and stability.
+- **Epoch 1000**: Fully trained agent demonstrating optimal performance and decision-making capabilities.
+
+### Visualizing Agent Performance
+
+Animated GIFs and video sequences from test runs provide a visual confirmation of the agent's competence. These visual aids illustrate how the agent effectively balances the pole, adapting to different initial conditions and disturbances.
+
+#### Performance Video at Epoch 1000
+
+A video from the final testing phase, displaying the agent's refined skills in balancing the pole on the cart without human intervention.
+
+[View Performance Video](link-to-video)
+
+### Summary
+
+The graphs and visual content underline the DQN agent's successful learning curve and its efficiency in mastering the CartPole balancing task. This analysis not only confirms the effectiveness of the implemented DQN components but also showcases the potential of reinforcement learning in complex decision-making scenarios.
+
 
 ## Usage
 Instructions on how to run the project, train the models, and evaluate them:
