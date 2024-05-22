@@ -69,20 +69,20 @@ These parameters collectively influence the agent's ability to balance explorati
 
 ### Hyperparameter Settings
 
-<table>
+<table style="border-spacing: 20px; width: 100%;">
   <tr>
-    <td>
+    <td style="vertical-align: top;">
       <strong>Set 1: High Exploration</strong>
-      <table>
+      <table style="width: 100%; border: 1px solid black; padding: 10px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>1000</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
         <tr><td>temperature_decay</td><td>0.995</td></tr>
       </table>
     </td>
-    <td>
+    <td style="vertical-align: top;">
       <strong>Set 2: Moderate Exploration</strong>
-      <table>
+      <table style="width: 100%; border: 1px solid black; padding: 10px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>10</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
@@ -91,18 +91,18 @@ These parameters collectively influence the agent's ability to balance explorati
     </td>
   </tr>
   <tr>
-    <td>
+    <td style="vertical-align: top;">
       <strong>Set 3: Low Exploration</strong>
-      <table>
+      <table style="width: 100%; border: 1px solid black; padding: 10px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>0.1</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
         <tr><td>temperature_decay</td><td>0.995</td></tr>
       </table>
     </td>
-    <td>
+    <td style="vertical-align: top;">
       <strong>Set 4: Constant Temperature</strong>
-      <table>
+      <table style="width: 100%; border: 1px solid black; padding: 10px;">
         <tr><th>Parameter</th><th>Value</th></tr>
         <tr><td>temperature_max</td><td>1</td></tr>
         <tr><td>temperature_min</td><td>0.0001</td></tr>
@@ -111,6 +111,7 @@ These parameters collectively influence the agent's ability to balance explorati
     </td>
   </tr>
 </table>
+
 
 
 
