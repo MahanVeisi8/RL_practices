@@ -17,7 +17,7 @@ This repository demonstrates the implementation of Boltzmann exploration (also k
 
 ## Setup 🛠️
 **Running the Notebook in Google Colab**
-- The notebook is designed for easy execution in Google Colab, requiring no additional setup other than a Google account and internet access.
+- The notebook is designed for easy execution in Google Colab, requiring no additional setup other than a Google account and internet access.😊
 
 **Installation of Required Libraries**
 ```bash
