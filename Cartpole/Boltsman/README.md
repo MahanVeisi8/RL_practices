@@ -34,7 +34,7 @@ Setup for GPU utilization (if available) and reproducibility settings are detail
 Detailed explanation of how Boltzmann exploration differs from epsilon-greedy strategies, including:
 - Initialization changes: Removal of epsilon parameters and introduction of temperature-related parameters.
 - Action selection modifications to utilize the Boltzmann distribution.
-  ```
+  ```py
       def select_action(self, state):
         """
         Select an action using Boltzmann exploration.
