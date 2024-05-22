@@ -93,22 +93,33 @@ class DQN_Agent:
 
 ### Model TrainTest Class
 
-The `Model_TrainTest` class manages the training and testing processes, setting up the environment, and executing the training cycles according to specified hyperparameters.
+The `Model TrainTest` class orchestrates the complete lifecycle of training and testing the DQN agent, managing environment interactions, and systematically improving the agent's performance based on a set of hyperparameters.
 
 ```py
 class Model_TrainTest:
     def __init__(self, agent, env, hyperparams):
-        # Initialize with an agent, environment, and training/testing settings.
+        # Initialize the class with an agent, the environment, and training/testing settings.
     def state_preprocess(self, state):
-        # Process raw state information from the environment to fit the network input requirements.
+        # Prepare the state for network input, potentially using encoding or normalization.
     def train(self):
-        # Run the training loop, collecting data, updating the agent, and logging results.
+        # Conduct the training operations, applying reward shaping to improve learning efficacy.
     def test(self, max_episodes):
-        # Evaluate the agent's performance on unseen data without exploration moves.
+        # Evaluate the agent's learned policy against unseen scenarios without exploring.
     def plot_training(self):
-        # Generate and save plots of rewards, losses, and other metrics to visualize the training progress.
+        # Visualize training progression with plots for rewards, losses, and epsilon values.
 ```
 
+#### Reward Shaping in Training
+
+An essential aspect of our training process is **reward shaping**, which involves modifying the reward function to make learning more efficient. This technique helps the agent learn faster and achieve better stability when balancing the pole:
+
+- **Pole Angle Reward**: The agent receives a higher reward for keeping the pole closer to the vertical position. This is calculated by normalizing and inverting the angle of the pole relative to vertical, encouraging minimal deviation.
+- **Cart Position Penalty**: To prevent the cart from reaching the edges of the track, a penalty is applied based on the cart's distance from the center. This keeps the actions focused on maintaining a central position.
+
+These enhancements to the reward function are crucial for guiding the agent towards more desirable behaviors and are directly integrated into the training loop of the `Model_TrainTest` class. By adjusting the rewards based on the pole's angle and the cart's position, we significantly increase the stability and performance of the agent, making it adept at maintaining balance under varying conditions.
+```
+
+This addition not only clarifies how reward shaping is implemented within your training regime but also underscores its importance in achieving better learning outcomes and agent performance.
 ## Results and Performance Analysis
 
 After intensive training and testing phases, our DQN agent demonstrates remarkable progress and efficiency in solving the CartPole problem. This section outlines the agent's performance across different training epochs and highlights its ability to generalize during testing phases.
