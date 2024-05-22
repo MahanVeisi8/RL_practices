@@ -146,8 +146,8 @@ Animated GIFs and video sequences from test runs provide a visual confirmation o
   </tr>
 </table>
 
-
 ### Summary
 
-The graphs and visual content underline the DQN agent's successful learning curve and its efficiency in mastering the CartPole balancing task. This analysis not only confirms the effectiveness of the implemented DQN components but also showcases the potential of reinforcement learning in complex decision-making scenarios.
+This project successfully demonstrates the implementation of a Deep Q-Network to solve the Cart Pole challenge, a classic test in reinforcement learning. Our results, presented through detailed plots and animations, confirm the DQN's ability to learn and adapt effectively. Through progressive training, the model showcased significant improvements in strategy and performance, achieving stability and high accuracy in balancing the pole. This work not only validates the DQN approach but also sets the stage for further advancements and applications in dynamic decision-making environments.
+
 
