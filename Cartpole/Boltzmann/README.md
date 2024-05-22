@@ -128,4 +128,5 @@ The table below presents a detailed comparison of how different temperature sett
 
 
 ## Conclusions 📝
-Summary of key findings from the Boltzmann exploration experiments, highlighting optimal settings for different scenarios and the trade-offs between exploration and exploitation based on the temperature parameter.
+
+The experiments demonstrate that temperature settings significantly impact the agent's learning dynamics. High initial temperatures facilitate extensive exploration but require careful decay to balance exploitation. Moderate initial temperatures provide a balanced approach, leading to steady and consistent learning. Low initial temperatures promote rapid exploitation but may hinder performance in complex environments. Constant temperatures ensure consistent exploration but may not yield optimal results in all scenarios. Optimal settings depend on the specific task and desired balance between exploration and exploitation.
