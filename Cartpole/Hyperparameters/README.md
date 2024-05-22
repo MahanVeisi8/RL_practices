@@ -80,10 +80,9 @@ The update frequency in reinforcement learning models impacts how often the targ
 | **50**           | Demonstrated slower convergence and did not reach optimal performance within 1000 episodes, suggesting a less efficient learning rate.        | ![Loss Frequency 50](assets/Update_frequency/50/Loss_plot.png)        | ![Reward Frequency 50](assets/Update_frequency/50/reward_plot.png)    |
 | **100**          | Showed the slowest improvement and failed to converge effectively within the given episodes, highlighting inefficiency in update pacing.       | ![Loss Frequency 100](assets/Update_frequency/100/Loss_plot.png)      | ![Reward Frequency 100](assets/Update_frequency/100/reward_plot.png)  |
 
+#### Conclusion
 These results illustrate that a higher update frequency (e.g., 5) can lead to quicker learning and faster achievement of training goals, such as early stopping criteria, which are indicative of a successful learning process. On the other hand, lower frequencies (50 and 100) struggle to achieve similar results within the same number of training episodes, leading to prolonged learning periods without significant gains in performance.
 
-#### Conclusion
-The experiment with update frequencies highlights that more frequent updates (e.g., every 5 episodes) are crucial for faster convergence and early mastery of the task. This frequency allows the model to quickly adapt to the environment, proving to be the most effective in training the DQN model on the Cart Pole problem within a constrained number of episodes. This finding underscores the importance of tuning update frequencies to match specific training dynamics and goals, providing a valuable strategy for optimizing reinforcement learning models.
 
 ## Results and Discussion
 Detailed presentation of the training and testing results with comprehensive visual data illustrating trends and key findings.
