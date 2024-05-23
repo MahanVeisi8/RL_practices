@@ -46,9 +46,9 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 ### Update Frequency Variations
 | Update Frequency | Loss Plot                                                             | Reward Plot                                                           |
 |------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **5**            | ![Loss Frequency 5](assets/Update_frequency/5/Loss_plot.png)          | ![Reward Frequency 5](assets/Update_frequency/5/reward_plot.png)      |
-| **50**           | ![Loss Frequency 50](assets/Update_frequency/50/Loss_plot.png)        | ![Reward Frequency 50](assets/Update_frequency/50/reward_plot.png)    |
-| **100**          | ![Loss Frequency 100](assets/Update_frequency/100/Loss_plot.png)      | ![Reward Frequency 100](assets/Update_frequency/100/reward_plot.png)  |
+| **5**            | ![Loss Frequency 5](assets/2-Hyperparameters/Update_frequency/5/Loss_plot.png)          | ![Reward Frequency 5](assets/2-Hyperparameters/Update_frequency/5/reward_plot.png)      |
+| **50**           | ![Loss Frequency 50](assets/2-Hyperparameters/Update_frequency/50/Loss_plot.png)        | ![Reward Frequency 50](assets/2-Hyperparameters/Update_frequency/50/reward_plot.png)    |
+| **100**          | ![Loss Frequency 100](assets/2-Hyperparameters/Update_frequency/100/Loss_plot.png)      | ![Reward Frequency 100](assets/2-Hyperparameters/Update_frequency/100/reward_plot.png)  |
 ## 3 - Boltzmann Exploration
 - ** **
 - **Goals:** Implement Boltzmann exploration strategy within a DQN setup to compare its effectiveness against the epsilon-greedy approach. Focus on the probabilistic approach to action selection based on Q-values.
