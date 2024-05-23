@@ -135,15 +135,15 @@ After extensive training, our SARSA agent has shown impressive progress and effi
 
 ### Testing Phase
 
-Testing of the trained models at different epochs (10, 15,000, and 30,000) showcases the agent's improvement and stability over time. The results from these tests confirm the model's robustness and ability to generalize the learned policy to unseen scenarios.
+Testing of the trained models at different epochs (10, 15,000, and 30,000) helped to evaluate the agent's improvement and stability over time. While the agent demonstrated some learning and adaptation, it did not achieve the high stability or consistent optimal performance seen in more robust reinforcement learning models.
 
-- **Epoch 10**: The early stage of learning, where the agent's policy is relatively underdeveloped, achieving only short durations of pole balancing.
-- **Epoch 15,000**: Midway through training, the agent shows significant improvements in strategy and stability.
-- **Epoch 30,000**: A fully trained agent demonstrating optimal performance and decision-making capabilities.
+- **Epoch 10**: At this early stage of learning, the agent's policy is underdeveloped, achieving only brief durations of pole balancing, indicative of its initial exploratory strategies.
+- **Epoch 15,000**: Midway through training, the agent shows some improvements in strategy and pole balancing duration, but it does not consistently achieve high rewards or stability.
+- **Epoch 30,000**: Although there is significant learning compared to the initial epochs, the agent still struggles to maintain long-term balance, indicating the need for further optimization or exploration of alternative strategies.
 
 ### Visualizing Agent Performance
 
-Animated GIFs and video sequences from test runs provide visual confirmation of the agent's competence. These visual aids illustrate how the agent effectively balances the pole, adapting to different initial conditions and disturbances.
+The visual aids from test runs illustrate the agent's real-time performance at various stages. Despite some progressive improvement, the agent fails to consistently balance the pole for extended periods or adapt to varying conditions robustly.
 
 #### Performance Videos
 
@@ -158,9 +158,8 @@ Animated GIFs and video sequences from test runs provide visual confirmation of 
 
 ### Summary
 
-The SARSA implementation has successfully demonstrated its ability to learn and adapt effectively to the Cart Pole challenge. The detailed plots and animations confirm the algorithm's learning efficacy and robustness. Through progressive training, the agent showcased significant improvements in strategy and performance, achieving high stability and excellent accuracy in balancing the pole. This success not only underscores the potential of SARSA in dynamic decision-making environments but also sets a benchmark for future enhancements and applications.
-
+Our SARSA implementation has shown partial success in adapting to the Cart Pole challenge but did not achieve the optimal stability or high reward benchmarks. The plots and visual evidence point to an improvement in strategy over time, yet they also highlight the algorithm’s limitations in maintaining long-term balance without further tuning or enhanced learning strategies.
 
 ## Conclusions
 
-The project demonstrates the application of the SARSA algorithm to a classic problem in reinforcement learning. The results show how the algorithm performs under different conditions and provide insights into its learning capabilities and stability.
+This project underscores the practical challenges of applying the SARSA algorithm to dynamic tasks like the Cart Pole problem. The results reveal substantial room for improvement, particularly in achieving consistent performance across all stages of learning. These findings suggest the potential need for incorporating mechanisms like replay memory or exploring more sophisticated policy enhancements to achieve better stability and reliability in decision-making environments.
