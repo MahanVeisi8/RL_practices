@@ -12,7 +12,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 - [4 - SARSA (State-Action-Reward-State-Action)](#4---sarsa-state-action-reward-state-action)
 
 ## 1 - DQN (Deep Q-Networks)
-- **[DQN](1%20-%20DQN/)**
+- **[1 - DQN](1%20-%20DQN/)**
 - **Goals:** Implement and evaluate the DQN algorithm. Focus on demonstrating how deep learning can be used to solve reinforcement learning problems efficiently.
 
 ![DQN](assets/DQN.png)
