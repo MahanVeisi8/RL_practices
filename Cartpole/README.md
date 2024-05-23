@@ -15,7 +15,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 - **[1 - DQN](1%20-%20DQN/)**
 - **Goals:** Implement and evaluate the DQN algorithm. Focus on demonstrating how deep learning can be used to solve reinforcement learning problems efficiently.
 
-![DQN](assets/1-DQN/env.png)
+![DQN](assets/1-DQN/env.webp)
 
 <table>
   <tr>
