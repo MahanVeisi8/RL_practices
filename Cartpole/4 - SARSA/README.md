@@ -112,23 +112,49 @@ class Model_TrainTest:
         # Visualize training progress with plots for rewards, losses, and epsilon decay.
 ```
 
-## Training Process
+## Results and Performance Analysis
 
-The training process involves running the SARSA agent through multiple episodes, updating the policy based on observed rewards and transitions, and adjusting the epsilon value to manage the exploration-exploitation trade-off.
+After extensive training, our SARSA agent has shown impressive progress and efficiency in solving the CartPole problem. This section discusses the agent's performance throughout different stages of training and its ability to generalize during the testing phases.
 
-### Hyperparameters
+### Training Progress
 
-- Learning Rate: 0.001
-- Discount Factor: 0.99
-- Epsilon Decay: 0.995
+The SARSA agent was trained over 30,000 episodes with the goal of maximizing the pole's balance duration on the cart. The learning process is quantified through plots that illustrate the evolution of rewards, losses, and the agent's decision-making epsilon parameter over time.
 
-## Testing
+#### Training Plots
+<table>
+  <tr>
+    <td>Loss Plot<br><img src="assets/Loss_plot.png" alt="Loss Plot" width="320px"></td>
+    <td>Reward Plot<br><img src="assets/reward_plot.png" alt="Reward Plot" width="320px"></td>
+    <td>Epsilon Decay Plot<br><img src="assets/Epsilon_plot.png" alt="Epsilon Decay Plot" width="320px"></td>
+  </tr>
+</table>
 
-The model's performance is evaluated by testing it on new episodes and observing its ability to maintain the pole's balance. This phase helps verify the effectiveness of the learned policies.
+### Testing Phase
 
-## Results
+Testing of the trained models at different epochs (10, 15,000, and 30,000) showcases the agent's improvement and stability over time. The results from these tests confirm the model's robustness and ability to generalize the learned policy to unseen scenarios.
 
-Results include plots of rewards, losses, and the epsilon decay over training episodes, illustrating the learning progression and effectiveness of the SARSA algorithm.
+- **Epoch 10**: The early stage of learning, where the agent's policy is relatively underdeveloped, achieving only short durations of pole balancing.
+- **Epoch 15,000**: Midway through training, the agent shows significant improvements in strategy and stability.
+- **Epoch 30,000**: A fully trained agent demonstrating optimal performance and decision-making capabilities.
+
+### Visualizing Agent Performance
+
+Animated GIFs and video sequences from test runs provide visual confirmation of the agent's competence. These visual aids illustrate how the agent effectively balances the pole, adapting to different initial conditions and disturbances.
+
+#### Performance Videos
+
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 15000<br><img src="assets/15000epoch.gif" alt="Epoch 15000 Performance" width="240px"></td>
+    <td>Epoch 30000<br><img src="assets/30000epoch.gif" alt="Epoch 30000 Performance" width="240px"></td>
+  </tr>
+</table>
+
+### Summary
+
+The SARSA implementation has successfully demonstrated its ability to learn and adapt effectively to the Cart Pole challenge. The detailed plots and animations confirm the algorithm's learning efficacy and robustness. Through progressive training, the agent showcased significant improvements in strategy and performance, achieving high stability and excellent accuracy in balancing the pole. This success not only underscores the potential of SARSA in dynamic decision-making environments but also sets a benchmark for future enhancements and applications.
+
 
 ## Conclusions
 
