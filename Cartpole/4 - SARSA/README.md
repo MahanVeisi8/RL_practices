@@ -112,13 +112,17 @@ class Model_TrainTest:
         # Visualize training progress with plots for rewards, losses, and epsilon decay.
 ```
 
-## Results and Performance Analysis
+### Results and Performance Analysis
 
 After extensive training, our SARSA agent has shown impressive progress and efficiency in solving the CartPole problem. This section discusses the agent's performance throughout different stages of training and its ability to generalize during the testing phases.
 
-### Training Progress
+### Insights from Detailed Analysis
 
-The SARSA agent was trained over 30,000 episodes with the goal of maximizing the pole's balance duration on the cart. The learning process is quantified through plots that illustrate the evolution of rewards, losses, and the agent's decision-making epsilon parameter over time.
+- **Memory Usage**: Unlike DQN, the SARSA algorithm does not use a replay buffer to reuse old experiences. Instead, each experience is used once for an update and then discarded. This approach ensures that learning is always based on the most recent experiences, although it may slow down the learning process because the agent does not benefit from the potentially useful repetitive exposure to the same experiences.
+
+- **Learning Rate and Episode Count**: The non-repetitive use of experiences suggests a need for a larger number of episodes to achieve comparable performance to techniques like DQN, which can reuse experiences for multiple updates. Our setup uses a high `max_episode` count and an `epsilon_decay` rate designed to accommodate this learning style, ensuring gradual but steady improvement.
+
+- **Potential for Enhancement**: Allowing experiences to contribute to multiple updates before being discarded might improve performance. Future iterations of this project could explore a hybrid approach where experiences are used more than once before clearing, potentially accelerating the learning process and enhancing stability.
 
 #### Training Plots
 <table>
@@ -150,6 +154,7 @@ Animated GIFs and video sequences from test runs provide visual confirmation of 
     <td>Epoch 30000<br><img src="assets/30000epoch.gif" alt="Epoch 30000 Performance" width="240px"></td>
   </tr>
 </table>
+
 
 ### Summary
 
