@@ -1,91 +1,32 @@
-# RL Practices - CartPole with DQN
+# Reinforcement Learning Practices 🚀
+
+![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue)
+![Status](https://img.shields.io/badge/status-active-green)
+
+Welcome to the Reinforcement Learning Practices repository! This repository hosts multiple projects, each dedicated to exploring different aspects and techniques of reinforcement learning across various problems and setups.
+
+## Current Projects
+- [CartPole RL Practices](CartPole%20RL%20Practices/): A collection of experiments and implementations focusing on the Cart Pole problem using various reinforcement learning algorithms.
 
 ## Overview
-This repository is dedicated to Reinforcement Learning (RL) practices, with a focus on the CartPole problem using the Deep Q-Network (DQN) algorithm. The aim is to explore various RL techniques and compare their performance on a classic control task.
 
-## Table of Contents
-- [Installation](#installation)
-- [Running the Notebook](#running-the-notebook)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+### CartPole RL Practices
+This project is an extensive exploration of different reinforcement learning strategies applied to the classic Cart Pole problem. Each subdirectory focuses on a unique RL algorithm or aspect, providing deep dives into their setup, implementation, and performance analysis.
 
-## Installation
+#### Highlights:
+- **Deep Q-Networks (DQN)**
+- **Hyperparameter Exploration**
+- **Boltzmann Exploration**
+- **SARSA (State-Action-Reward-State-Action)**
 
-To set up your environment to run the code provided in this repository, you will need Python 3 and the following Python libraries installed:
+Each directory contains detailed implementations and results that shed light on the capabilities and challenges of applying RL algorithms to a well-understood test environment in the field.
 
-- Gymnasium
-- PyTorch
-- Matplotlib
-- Renderlab
+## Future Directions
+The repository is continuously updated with new projects and experiments as we explore more complex problems and sophisticated algorithms in reinforcement learning.
 
-You can install all required packages with:
+Feel free to dive into each project directory for comprehensive code, insights, and analyses. Whether you're new to reinforcement learning or looking to expand your understanding of specific algorithms and their applications, there's something here for everyone. Stay tuned for more updates and new projects!
 
-```bash
-pip install gymnasium torch matplotlib renderlab
-```
+### Contributing
+We welcome contributions from the community! If you have suggestions, improvements, or want to contribute new experiments, please feel free to submit a pull request or open an issue.
 
-## Running the Notebook
-
-This project is designed to be run in Google Colab, which allows for the use of free GPUs provided by Google. However, you can also run the notebook locally if you have the appropriate setup.
-
-## Project Structure
-
-```
-RL_practices/
-│
-├── cartpole/
-│   ├── DQNV1/
-│   │   ├── model.py           # Defines the DQN model and training procedures
-│   │   ├── train_test.py      # Script to train and evaluate the model
-│   │   └── utils.py           # Helper functions for model operations
-│   └── README.md              # Documentation and usage instructions
-│
-└── README.md                  # Overview and global repository information
-```
-
-## Usage
-
-To start using this repository for the CartPole problem with DQN, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone [repository-url]
-   ```
-2. Navigate to the `cartpole/DQNV1` directory:
-   ```bash
-   cd RL_practices/cartpole/DQNV1
-   ```
-3. Run the training script:
-   ```bash
-   python train_test.py --train
-   ```
-4. Evaluate the model:
-   ```bash
-   python train_test.py --test
-   ```
-
-## Contributing
-
-Contributions to this project are welcome! Here's how you can contribute:
-- Submit a pull request with your proposed changes
-- Open an issue to discuss potential modifications or report bugs
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-### Explanation of Sections
-
-1. **Overview**: Summarize the repository's purpose and the specific RL problem it addresses.
-2. **Table of Contents**: Helps users navigate large READMEs.
-3. **Installation**: Detailed steps on how to set up the project environment.
-4. **Running the Notebook**: Instructions for executing the code.
-5. **Project Structure**: Describes the directory layout and key files.
-6. **Usage**: Step-by-step guide to using the repository.
-7. **Contributing**: Encourages others to contribute to the project.
-8. **License**: Information about the project's licensing.
-
-You can replicate this structure for each directory in your repository, adjusting the content as necessary for the specific RL algorithms or problems you're addressing.
+Happy exploring and learning!
