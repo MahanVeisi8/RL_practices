@@ -8,6 +8,14 @@ Welcome to the Reinforcement Learning Practices repository! This repository host
 ## Current Projects
 - [CartPole RL Practices](Cartpole/): A collection of experiments and implementations focusing on the Cart Pole problem using various reinforcement learning algorithms.
 
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="assets/Cartpole/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 500<br><img src="assets/Cartpole/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="assets/Cartpole/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
+  </tr>
+</table>
+
 ## Overview
 
 ### CartPole RL Practices
