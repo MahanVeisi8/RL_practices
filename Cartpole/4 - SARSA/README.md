@@ -28,41 +28,93 @@ This project applies the State-Action-Reward-State-Action (SARSA) reinforcement 
 ## Setup
 
 **Running the Notebook in Google Colab**
+- The notebook is designed for easy execution in Google Colab, requiring no additional setup other than a Google account and internet access.😊
 
-This notebook is designed for Google Colab. It requires no additional setup from the user's local environment except access to the internet and a Google account.
-
-### Installation of Required Libraries
+### Prerequisites
+To run this project locally, you need to install the following Python packages. This setup ensures you have all the required libraries:
 
 ```bash
 pip install gymnasium
 pip install torch
 pip install matplotlib
+pip install renderlab
 ```
 
-### Importing Libraries
 
-```python
-import torch
-import gymnasium as gym
-import matplotlib.pyplot as plt
+Got it! Here’s a refined version of the SARSA implementation section formatted similarly to your DQN README, focusing on explaining the components using concise code snippets and descriptions:
+
+```md
+## Implementing SARSA Components
+
+This section outlines the implementation of the SARSA algorithm's architecture, which is structured around several key components that each play a critical role in the learning process:
+
+### Memory Class
+
+The `Memory` class is responsible for storing experiences that the SARSA agent encounters, which are later used to update the agent's learning model, ensuring a diverse set of experiences influence the learning process.
+
+```py
+class Memory:
+    def __init__(self, capacity):
+        # Initialize replay memory with a specified capacity.
+    def store(self, state, action, next_state, next_action, reward, done):
+        # Store an experience tuple in the replay memory.
+    def get_all(self):
+        # Retrieve all stored experiences for learning updates.
+    def clear(self):
+        # Clear all contents of the memory to reset the learning history.
 ```
 
-### Setting Up GPU and Reproducibility
+### SARSA Network Class
 
-```python
-import torch
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+The `SARSA_Network` defines the neural network architecture used to estimate Q-values for each action given a state input. This component is crucial for the SARSA agent to evaluate possible actions from each state.
+
+```py
+class SARSA_Network(nn.Module):
+    def __init__(self, num_actions, input_dim):
+        # Initialize neural network layers and setup architecture.
+    def forward(self, x):
+        # Process input state to output Q-values for each action.
+    def _initialize_weights(self):
+        # Initialize weights to facilitate effective learning.
 ```
 
-## SARSA Implementation
+### SARSA Agent Class
 
-### Agent Design
+The `SARSA_Agent` manages the interaction with the environment, decision making based on the current policy, and updates the policy based on observed transitions.
 
-The SARSA agent class is designed to interact with the environment and update the policy based on a balance between exploration and exploitation, using an epsilon-greedy strategy.
+```py
+class SARSA_Agent:
+    def __init__(self, env, epsilon_max, epsilon_min, epsilon_decay, clip_grad_norm, learning_rate, discount, memory_capacity):
+        # Setup agent with environment and learning parameters.
+    def select_action(self, state):
+        # Select an action using an epsilon-greedy approach for the given state.
+    def learn(self, done):
+        # Update the policy based on stored experiences and observed rewards.
+    def update_epsilon(self):
+        # Gradually decrease epsilon to reduce the exploration rate over time.
+    def save(self, path):
+        # Save the model's state dictionary for later use.
+    def hard_update(self):
+        # Synchronize the weights of the target network with the main network.
+```
 
-### Network Architecture
+### Model TrainTest Class
 
-The network consists of a simple feedforward neural network with layers designed to process the state inputs and output action values.
+The `Model_TrainTest` manages the full lifecycle of training and testing the SARSA agent, coordinating environment interactions and systematic improvements based on a set of training hyperparameters.
+
+```py
+class Model_TrainTest:
+    def __init__(self, hyperparams):
+        # Initialize with hyperparameters and set up the environment and agent.
+    def state_preprocess(self, state, num_states):
+        # Convert state information for network input, potentially normalizing.
+    def train(self):
+        # Execute the training process, modifying rewards to improve learning efficacy.
+    def test(self, max_episodes):
+        # Evaluate the agent's policy against new scenarios without further exploration.
+    def plot_training(self, episode):
+        # Visualize training progress with plots for rewards, losses, and epsilon decay.
+```
 
 ## Training Process
 
