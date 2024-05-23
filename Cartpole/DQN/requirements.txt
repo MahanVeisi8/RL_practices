@@ -1,4 +1,0 @@
-gymnasium==0.24.0 
-torch==1.10.0      
-matplotlib==3.4.3  
-renderlab==0.1.4   
