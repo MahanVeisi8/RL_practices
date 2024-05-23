@@ -1,5 +1,9 @@
 # SARSA for Cart Pole Problem
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/19wuWHiw_GGcXLqzsA12ljOp44NmNNZiw?usp=sharing](https://colab.research.google.com/drive/16hRNXngPzT1Yaw_xO7B3Jy0ljUtjA_B6?usp=sharing))
+[![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/)
+[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)]()
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Objectives](#objectives)
