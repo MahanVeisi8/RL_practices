@@ -56,6 +56,12 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 
 ![boltzmann_formula](assets/3-Boltzmann/boltzmann_formula.png)
 
+| Set          | Temperature Plot                                                                                                 | Loss Plot                                                                                           | Reward Plot                                                                                         |
+|--------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Set 1**    | <img src="assets/3-Boltzmann/Hyperparameter_set_1/Temperature_plot.png" width="200">                            | <img src="assets/3-Boltzmann/Hyperparameter_set_1/Loss_plot.png" width="200">                      | <img src="assets/3-Boltzmann/Hyperparameter_set_1/reward_plot.png" width="200">                    |
+| **Set 2**    | <img src="assets/3-Boltzmann/Hyperparameter_set_2/Temperature_plot.png" width="200">                            | <img src="assets/3-Boltzmann/Hyperparameter_set_2/Loss_plot.png" width="200">                      | <img src="assets/3-Boltzmann/Hyperparameter_set_2/reward_plot.png" width="200">                    |
+| **Set 3**    | <img src="assets/3-Boltzmann/Hyperparameter_set_3/Temperature_plot.png" width="200">                            | <img src="assets/3-Boltzmann/Hyperparameter_set_3/Loss_plot.png" width="200">                      | <img src="assets/3-Boltzmann/Hyperparameter_set_3/reward_plot.png" width="200">                    |
+| **Set 4**    | <img src="assets/3-Boltzmann/Hyperparameter_set_4/Temperature_plot.png" width="200">                            | <img src="assets/3-Boltzmann/Hyperparameter_set_4/Loss_plot.png" width="200">                      | <img src="assets/3-Boltzmann/Hyperparameter_set_4/reward_plot.png" width="200">                    |
 
 ## 4 - SARSA (State-Action-Reward-State-Action)
 - ** **
