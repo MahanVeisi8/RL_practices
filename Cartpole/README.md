@@ -32,16 +32,16 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 ### Learning Rate Variations
 | Learning Rate | Loss Plot                                                    | Reward Plot                                                  |
 |---------------|--------------------------------------------------------------|--------------------------------------------------------------|
-| **1e-2**      | ![Loss 1e-2](assets/Learning_rate/1e-2/Loss_plot.png)        | ![Reward 1e-2](assets/Learning_rate/1e-2/reward_plot.png)    |
-| **1e-4**      | ![Loss 1e-4](assets/Learning_rate/1e-4/Loss_plot.png)        | ![Reward 1e-4](assets/Learning_rate/1e-4/reward_plot.png)    |
-| **1e-6**      | ![Loss 1e-6](assets/Learning_rate/1e-6/Loss_plot.png)        | ![Reward 1e-6](assets/Learning_rate/1e-6/reward_plot.png)    |
+| **1e-2**      | ![Loss 1e-2](assets/2-Hyperparameters/Learning_rate/1e-2/Loss_plot.png)        | ![Reward 1e-2](assets/2-Hyperparameters/Learning_rate/1e-2/reward_plot.png)    |
+| **1e-4**      | ![Loss 1e-4](assets/2-Hyperparameters/Learning_rate/1e-4/Loss_plot.png)        | ![Reward 1e-4](assets/2-Hyperparameters/Learning_rate/1e-4/reward_plot.png)    |
+| **1e-6**      | ![Loss 1e-6](assets/2-Hyperparameters/Learning_rate/1e-6/Loss_plot.png)        | ![Reward 1e-6](assets/2-Hyperparameters/Learning_rate/1e-6/reward_plot.png)    |
 
 ### Discount Factor Variations
 | Discount Factor | Loss Plot                                                          | Reward Plot                                                        |
 |-----------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
-| **0.997**       | ![Loss 0.997](assets/Discount_factor/0.997/Loss_plot.png)          | ![Reward 0.997](assets/Discount_factor/0.997/reward_plot.png)      |
-| **0.97**        | ![Loss 0.97](assets/Discount_factor/0.97/Loss_plot.png)            | ![Reward 0.97](assets/Discount_factor/0.97/reward_plot.png)        |
-| **0.9**         | ![Loss 0.9](assets/Discount_factor/0.9/Loss_plot.png)              | ![Reward 0.9](assets/Discount_factor/0.9/reward_plot.png)          |
+| **0.997**       | ![Loss 0.997](assets/2-Hyperparameters/Discount_factor/0.997/Loss_plot.png)          | ![Reward 0.997](assets/2-Hyperparameters/Discount_factor/0.997/reward_plot.png)      |
+| **0.97**        | ![Loss 0.97](assets/2-Hyperparameters/Discount_factor/0.97/Loss_plot.png)            | ![Reward 0.97](assets/2-Hyperparameters/Discount_factor/0.97/reward_plot.png)        |
+| **0.9**         | ![Loss 0.9](assets/2-Hyperparameters/Discount_factor/0.9/Loss_plot.png)              | ![Reward 0.9](assets/2-Hyperparameters/Discount_factor/0.9/reward_plot.png)          |
 
 ### Update Frequency Variations
 | Update Frequency | Loss Plot                                                             | Reward Plot                                                           |
