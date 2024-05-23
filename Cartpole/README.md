@@ -32,9 +32,9 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 ### Learning Rate Variations
 | Learning Rate | Loss Plot                                                    | Reward Plot                                                  |
 |---------------|--------------------------------------------------------------|--------------------------------------------------------------|
-| **1e-2**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/Loss_plot.png" width="100"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/reward_plot.png" width="100"> |
-| **1e-4**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/Loss_plot.png" width="100"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/reward_plot.png" width="100"> |
-| **1e-6**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/Loss_plot.png" width="100"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/reward_plot.png" width="100"> |
+| **1e-2**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/Loss_plot.png" width="150"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/reward_plot.png" width="150"> |
+| **1e-4**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/Loss_plot.png" width="150"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/reward_plot.png" width="150"> |
+| **1e-6**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/Loss_plot.png" width="150"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/reward_plot.png" width="150"> |
 
 ### Discount Factor Variations
 | Discount Factor | Loss Plot                                                          | Reward Plot                                                        |
