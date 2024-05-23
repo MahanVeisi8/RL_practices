@@ -1,9 +1,7 @@
 # SARSA for Cart Pole Problem
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16hRNXngPzT1Yaw_xO7B3Jy0ljUtjA_B6?usp=sharing)
-
 [![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/)
-
 [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/MahanVeisi8/RL_practices/Cartpole/4%20-%SARSA/requirements.txt)
 
 ## Table of Contents
