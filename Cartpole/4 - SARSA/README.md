@@ -40,10 +40,6 @@ pip install matplotlib
 pip install renderlab
 ```
 
-
-Got it! Here’s a refined version of the SARSA implementation section formatted similarly to your DQN README, focusing on explaining the components using concise code snippets and descriptions:
-
-```md
 ## Implementing SARSA Components
 
 This section outlines the implementation of the SARSA algorithm's architecture, which is structured around several key components that each play a critical role in the learning process:
