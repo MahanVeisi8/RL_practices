@@ -16,7 +16,6 @@
   - [Visualizing Agent Performance](#visualizing-agent-performance)
 - [Conclusions](#conclusions)
 
-- 
 ## Introduction
 
 This project applies the State-Action-Reward-State-Action (SARSA) reinforcement learning algorithm to the classic "Cart Pole" problem. Our objective is to balance a pole, hinged to a moving cart, by strategically moving the cart left or right.
