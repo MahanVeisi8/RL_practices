@@ -32,29 +32,30 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 ### Learning Rate Variations
 | Learning Rate | Loss Plot                                                    | Reward Plot                                                  |
 |---------------|--------------------------------------------------------------|--------------------------------------------------------------|
-| **1e-2**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/Loss_plot.png" width="250"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/reward_plot.png" width="250"> |
-| **1e-4**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/Loss_plot.png" width="250"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/reward_plot.png" width="250"> |
-| **1e-6**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/Loss_plot.png" width="250"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/reward_plot.png" width="250"> |
+| **1e-2**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/Loss_plot.png" width="220"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-2/reward_plot.png" width="220"> |
+| **1e-4**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/Loss_plot.png" width="220"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-4/reward_plot.png" width="220"> |
+| **1e-6**      | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/Loss_plot.png" width="220"> | <img src="assets/2-Hyperparameters/Learning_rate/1e-6/reward_plot.png" width="220"> |
 
 ### Discount Factor Variations
 | Discount Factor | Loss Plot                                                          | Reward Plot                                                        |
 |-----------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
-| **0.997**       | <img src="assets/2-Hyperparameters/Discount_factor/0.997/Loss_plot.png" width="250"> | <img src="assets/2-Hyperparameters/Discount_factor/0.997/reward_plot.png" width="250"> |
-| **0.97**        | <img src="assets/2-Hyperparameters/Discount_factor/0.97/Loss_plot.png" width="250">  | <img src="assets/2-Hyperparameters/Discount_factor/0.97/reward_plot.png" width="250">  |
-| **0.9**         | <img src="assets/2-Hyperparameters/Discount_factor/0.9/Loss_plot.png" width="250">   | <img src="assets/2-Hyperparameters/Discount_factor/0.9/reward_plot.png" width="250">   |
+| **0.997**       | <img src="assets/2-Hyperparameters/Discount_factor/0.997/Loss_plot.png" width="220"> | <img src="assets/2-Hyperparameters/Discount_factor/0.997/reward_plot.png" width="220"> |
+| **0.97**        | <img src="assets/2-Hyperparameters/Discount_factor/0.97/Loss_plot.png" width="220">  | <img src="assets/2-Hyperparameters/Discount_factor/0.97/reward_plot.png" width="220">  |
+| **0.9**         | <img src="assets/2-Hyperparameters/Discount_factor/0.9/Loss_plot.png" width="220">   | <img src="assets/2-Hyperparameters/Discount_factor/0.9/reward_plot.png" width="220">   |
 
 ### Update Frequency Variations
 | Update Frequency | Loss Plot                                                             | Reward Plot                                                           |
 |------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **5**            | <img src="assets/2-Hyperparameters/Update_frequency/5/Loss_plot.png" width="250">       | <img src="assets/2-Hyperparameters/Update_frequency/5/reward_plot.png" width="250">     |
-| **50**           | <img src="assets/2-Hyperparameters/Update_frequency/50/Loss_plot.png" width="250">      | <img src="assets/2-Hyperparameters/Update_frequency/50/reward_plot.png" width="250">    |
-| **100**          | <img src="assets/2-Hyperparameters/Update_frequency/100/Loss_plot.png" width="250">     | <img src="assets/2-Hyperparameters/Update_frequency/100/reward_plot.png" width="250">   |
+| **5**            | <img src="assets/2-Hyperparameters/Update_frequency/5/Loss_plot.png" width="220">       | <img src="assets/2-Hyperparameters/Update_frequency/5/reward_plot.png" width="220">     |
+| **50**           | <img src="assets/2-Hyperparameters/Update_frequency/50/Loss_plot.png" width="220">      | <img src="assets/2-Hyperparameters/Update_frequency/50/reward_plot.png" width="220">    |
+| **100**          | <img src="assets/2-Hyperparameters/Update_frequency/100/Loss_plot.png" width="220">     | <img src="assets/2-Hyperparameters/Update_frequency/100/reward_plot.png" width="220">   |
 
 ## 3 - Boltzmann Exploration
-- ** **
+- ****
 - **Goals:** Implement Boltzmann exploration strategy within a DQN setup to compare its effectiveness against the epsilon-greedy approach. Focus on the probabilistic approach to action selection based on Q-values.
 
-![Boltzmann](assets/boltzmann.png)
+![boltzmann_formula](assets/3-Boltzmann/boltzmann_formula.png)
+
 
 ## 4 - SARSA (State-Action-Reward-State-Action)
 - ** **
