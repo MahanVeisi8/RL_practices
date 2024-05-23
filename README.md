@@ -6,7 +6,7 @@
 Welcome to the Reinforcement Learning Practices repository! This repository hosts multiple projects, each dedicated to exploring different aspects and techniques of reinforcement learning across various problems and setups.
 
 ## Current Projects
-- [CartPole RL Practices](CartPole%20RL%20Practices/): A collection of experiments and implementations focusing on the Cart Pole problem using various reinforcement learning algorithms.
+- [CartPole RL Practices](Cartpole/): A collection of experiments and implementations focusing on the Cart Pole problem using various reinforcement learning algorithms.
 
 ## Overview
 
