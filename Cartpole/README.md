@@ -67,6 +67,6 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 - ** **
 - **Goals:** Apply the SARSA algorithm to the Cart Pole problem to evaluate its performance in a straightforward RL scenario. Focus on how SARSA's on-policy learning compares to other techniques like DQN.
 
-![SARSA](assets/SARSA.png)
+![SARSA](assets/4-SARSA/sarsa2.png)
 
 Each directory contains detailed implementations, experiments, and results that explore various aspects of RL algorithms. Feel free to explore each practice directory for in-depth code, insights, and performance analysis! 😃
