@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19wuWHiw_GGcXLqzsA12ljOp44NmNNZiw?usp=sharing)
 [![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/)
-[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/MahanVeisi8/RL_practices/Cartpole/3 - Boltzmann/requirements.txt)
+[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/MahanVeisi8/RL_practices/Cartpole/3%20-%20Boltzmann/requirements.txt)
 
 ## Introduction 🚀
 This repository provides an implementation of Boltzmann exploration within Deep Q-Networks (DQN) for the Cart Pole problem. Boltzmann exploration, unlike the epsilon-greedy method, offers a probabilistic approach to action selection. It utilizes the **`temperature`** parameter to adjust the probability of selecting actions based on their Q-values, aiming for a more effective exploration-exploitation balance.
