@@ -1,6 +1,3 @@
-Got it! Let's focus the README specifically on the SARSA implementation for the Cart Pole problem. Here's a refined draft tailored to highlight the SARSA algorithm:
-
-```md
 # SARSA for Cart Pole Problem
 
 ## Introduction
@@ -86,7 +83,3 @@ Results include plots of rewards, losses, and the epsilon decay over training ep
 ## Conclusions
 
 The project demonstrates the application of the SARSA algorithm to a classic problem in reinforcement learning. The results show how the algorithm performs under different conditions and provide insights into its learning capabilities and stability.
-
-```
-
-This README provides a structured overview of your project, including details on the setup, implementation, training, and results for the SARSA algorithm applied to the Cart Pole problem. Adjust the hyperparameters and any specific sections to match your exact project details and results.
