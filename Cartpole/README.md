@@ -15,7 +15,15 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 - **[1 - DQN](1%20-%20DQN/)**
 - **Goals:** Implement and evaluate the DQN algorithm. Focus on demonstrating how deep learning can be used to solve reinforcement learning problems efficiently.
 
-![DQN](assets/DQN.png)
+- ![DQN](assets/1-DQN/env.png)
+
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="assets/1-DQN/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 500<br><img src="assets/1-DQN/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="assets/1-DQN/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
+  </tr>
+</table>
 
 ## 2 - Hyperparameter Exploration
 - ** **
