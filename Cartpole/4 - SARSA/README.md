@@ -1,7 +1,6 @@
 # SARSA for Cart Pole Problem
 
 ## Table of Contents
-
 - [Introduction](#introduction)
 - [Objectives](#objectives)
 - [Setup](#setup)
