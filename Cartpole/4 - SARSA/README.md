@@ -1,17 +1,5 @@
 # SARSA for Cart Pole Problem
 
-## Introduction
-
-This project applies the State-Action-Reward-State-Action (SARSA) reinforcement learning algorithm to the classic "Cart Pole" problem. Our objective is to balance a pole, hinged to a moving cart, by strategically moving the cart left or right.
-
-
-## Objectives
-
-- Implement the SARSA algorithm using PyTorch
-![SARSA_algorithm](assets/SARSA.png)
-- Train the SARSA model to maintain the balance of the pole on the moving cart for extended periods.
-- Evaluate the performance and learning stability of the SARSA algorithm.
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -28,6 +16,19 @@ This project applies the State-Action-Reward-State-Action (SARSA) reinforcement 
 - [Testing Phase](#testing-phase)
   - [Visualizing Agent Performance](#visualizing-agent-performance)
 - [Conclusions](#conclusions)
+
+- 
+## Introduction
+
+This project applies the State-Action-Reward-State-Action (SARSA) reinforcement learning algorithm to the classic "Cart Pole" problem. Our objective is to balance a pole, hinged to a moving cart, by strategically moving the cart left or right.
+
+
+## Objectives
+
+- Implement the SARSA algorithm using PyTorch
+![SARSA_algorithm](assets/SARSA.png)
+- Train the SARSA model to maintain the balance of the pole on the moving cart for extended periods.
+- Evaluate the performance and learning stability of the SARSA algorithm.
 
 ## Setup
 
