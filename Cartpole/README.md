@@ -51,7 +51,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 | **100**          | <img src="assets/2-Hyperparameters/Update_frequency/100/Loss_plot.png" width="220">     | <img src="assets/2-Hyperparameters/Update_frequency/100/reward_plot.png" width="220">   |
 
 ## 3 - Boltzmann Exploration
-- ****
+- **[3 - Boltzmann](3%-%Boltzmann)**
 - **Goals:** Implement Boltzmann exploration strategy within a DQN setup to compare its effectiveness against the epsilon-greedy approach. Focus on the probabilistic approach to action selection based on Q-values.
 
 ![boltzmann_formula](assets/3-Boltzmann/boltzmann_formula.png)
@@ -64,7 +64,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 | **Set 4**    | <img src="assets/3-Boltzmann/Hyperparameter_set_4/Temperature_plot.png" width="200">                            | <img src="assets/3-Boltzmann/Hyperparameter_set_4/Loss_plot.png" width="200">                      | <img src="assets/3-Boltzmann/Hyperparameter_set_4/reward_plot.png" width="200">                    |
 
 ## 4 - SARSA (State-Action-Reward-State-Action)
-- ** **
+- **[4 - SARSA](4%-%SARSA)**
 - **Goals:** Apply the SARSA algorithm to the Cart Pole problem to evaluate its performance in a straightforward RL scenario. Focus on how SARSA's on-policy learning compares to other techniques like DQN.
 
 ![SARSA](assets/4-SARSA/sarsa2.png)
