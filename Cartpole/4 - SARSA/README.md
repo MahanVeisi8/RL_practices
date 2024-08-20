@@ -28,7 +28,7 @@ This project applies the State-Action-Reward-State-Action (SARSA) reinforcement 
 ## Objectives
 
 - Implement the SARSA algorithm using PyTorch
-![SARSA_algorithm](assets/SARSA.png)
+![SARSA_algorithm](assets/SARSA_algorithm.png)
 - Train the SARSA model to maintain the balance of the pole on the moving cart for extended periods.
 - Evaluate the performance and learning stability of the SARSA algorithm.
 
