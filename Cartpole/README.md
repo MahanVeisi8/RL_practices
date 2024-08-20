@@ -51,7 +51,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 | **100**          | <img src="assets/2-Hyperparameters/Update_frequency/100/Loss_plot.png" width="220">     | <img src="assets/2-Hyperparameters/Update_frequency/100/reward_plot.png" width="220">   |
 
 ## 3 - Boltzmann Exploration
-- **[3 - Boltzmann](3%-%Boltzmann)**
+- **[3 - Boltzmann](3% - %Boltzmann)**
 - **Goals:** Implement Boltzmann exploration strategy within a DQN setup to compare its effectiveness against the epsilon-greedy approach. Focus on the probabilistic approach to action selection based on Q-values.
 
 ![boltzmann_formula](assets/3-Boltzmann/boltzmann_formula.png)
