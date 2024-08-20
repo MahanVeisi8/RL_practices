@@ -64,7 +64,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 | **Set 4**    | <img src="assets/3-Boltzmann/Hyperparameter_set_4/Temperature_plot.png" width="200">                            | <img src="assets/3-Boltzmann/Hyperparameter_set_4/Loss_plot.png" width="200">                      | <img src="assets/3-Boltzmann/Hyperparameter_set_4/reward_plot.png" width="200">                    |
 
 ## 4 - SARSA (State-Action-Reward-State-Action)
-- **[4 - SARSA](4%-%SARSA)**
+- **[4 - SARSA](4%20-%20SARSA)**
 - **Goals:** Apply the SARSA algorithm to the Cart Pole problem to evaluate its performance in a straightforward RL scenario. Focus on how SARSA's on-policy learning compares to other techniques like DQN.
 ![SARSA](assets/4-SARSA/SARSA_algorithm.png)
 
