@@ -15,7 +15,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 - **[1 - DQN](1%20-%20DQN/)**
 - **Goals:** Implement and evaluate the DQN algorithm. Focus on demonstrating how deep learning can be used to solve reinforcement learning problems efficiently.
 
-![DQN](assets/1-DQN/env.png)
+![DQN](assets/1-DQN/agent_and_environment.png)
 
 <table>
   <tr>
@@ -55,6 +55,7 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 - **Goals:** Implement Boltzmann exploration strategy within a DQN setup to compare its effectiveness against the epsilon-greedy approach. Focus on the probabilistic approach to action selection based on Q-values.
 
 ![boltzmann_formula](assets/3-Boltzmann/boltzmann_formula.png)
+![boltzmann_prob_choise_for_different_t_values](assets/3-Boltzmann/boltzmann_prob_choise_for_different_t_values.png)
 
 | Set          | Temperature Plot                                                                                                 | Loss Plot                                                                                           | Reward Plot                                                                                         |
 |--------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -66,7 +67,8 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 ## 4 - SARSA (State-Action-Reward-State-Action)
 - **[4 - SARSA](4%-%SARSA)**
 - **Goals:** Apply the SARSA algorithm to the Cart Pole problem to evaluate its performance in a straightforward RL scenario. Focus on how SARSA's on-policy learning compares to other techniques like DQN.
+![SARSA](assets/4-SARSA/SARSA_algorithm.png)
 
-![SARSA](assets/4-SARSA/sarsa2.png)
+![SARSA](assets/4-SARSA/SARSA_on_policy_Q_formula.png)
 
 Each directory contains detailed implementations, experiments, and results that explore various aspects of RL algorithms. Feel free to explore each practice directory for in-depth code, insights, and performance analysis! 😃
