@@ -66,7 +66,6 @@ Welcome to the CartPole RL Practices repository! This repository is divided into
 ## 4 - SARSA (State-Action-Reward-State-Action)
 - **[4 - SARSA](4%20-%20SARSA)**
 - **Goals:** Apply the SARSA algorithm to the Cart Pole problem to evaluate its performance in a straightforward RL scenario. Focus on how SARSA's on-policy learning compares to other techniques like DQN.
-![SARSA](assets/4-SARSA/SARSA_algorithm.png)
 
 ![SARSA](assets/4-SARSA/SARSA_on_policy_Q_formula.png)
 
