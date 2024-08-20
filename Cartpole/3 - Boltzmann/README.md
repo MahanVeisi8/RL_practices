@@ -70,7 +70,8 @@ These parameters collectively influence the agent's ability to balance explorati
 ### Hyperparameter Settings
 
 Before setting the hyperparameters, let's look at impacts of different temperatures and chances of choosing different values.
-![boltzmann_effect.png](assets/boltzmann_effect.png)
+
+![boltzmann_prob_choise_for_different_t_values](assets/3-Boltzmann/boltzmann_prob_choise_for_different_t_values.png)
 
 <table style="border-spacing: 80px; width: 100%;">
   <tr>
