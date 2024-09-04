@@ -1,6 +1,7 @@
 # Lunar Lander DQN 🛸
 
-![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GSWaiwTkF4uRjl7bLwNTlBNBdLjctP3n?usp=sharing)
+[![Python Version](https://img.shields.io/badge/Python-3.6%20|%203.7%20|%203.8-blue)](https://www.python.org/downloads/release/python-380/)
 ![Status](https://img.shields.io/badge/status-active-green)
 
 Welcome to the **Lunar Lander DQN** project! This project is part of a series of reinforcement learning practices applied to the Lunar Lander environment, a classic challenge in RL. This directory focuses on the implementation and evaluation of the Deep Q-Network (DQN) algorithm.
@@ -22,6 +23,24 @@ Welcome to the **Lunar Lander DQN** project! This project is part of a series of
 The **Lunar Lander** environment challenges an agent to land a spaceship on a designated landing pad using a main engine and two side engines. The goal is to safely land the spaceship while minimizing fuel usage and avoiding crashes.
 
 This project applies the Deep Q-Network (DQN) algorithm, which combines Q-Learning with deep neural networks to learn effective landing strategies directly from pixel data.
+![DQN](assets/DQN_algorithm.png)
+
+## Setup
+
+**Running the Notebook in Google Colab**
+- The notebook is designed for easy execution in Google Colab, requiring no additional setup other than a Google account and internet access.😊
+  
+The code is designed to run in a Python environment with essential machine learning and simulation libraries. You can execute the notebook directly in Google Colab using the badge link provided, which includes a pre-configured environment with all necessary dependencies.
+
+### Prerequisites
+To run this project locally, you need to install the following Python packages. This setup ensures you have all the required libraries:
+
+```bash
+pip install gymnasium
+pip install torch
+pip install matplotlib
+pip install renderlab
+```
 
 ## 2 - DQN Implementation
 ### Replay Memory
@@ -47,13 +66,15 @@ Several plots are generated to visualize the training progress:
 - **Mean Q Plot:** Displays the average Q-values estimated by the network.
 - **Epsilon Decay Plot:** Illustrates the reduction in exploration over time.
 
+![DQN](assets/plot.png)
+
 ## 4 - Results
 Below are some snapshots of the DQN agent's performance during training:
 <table>
   <tr>
     <td>Epoch 10<br><img src="assets/DQN/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
     <td>Epoch 1000<br><img src="assets/DQN/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
-    <td>Epoch 1637<br><img src="assets/DQN/1637epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
+    <td>Epoch 1637<br><img src="assets/DQN/1650epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
   </tr>
 </table>
 
