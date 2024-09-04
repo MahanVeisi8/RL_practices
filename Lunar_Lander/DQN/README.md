@@ -66,15 +66,15 @@ Several plots are generated to visualize the training progress:
 - **Mean Q Plot:** Displays the average Q-values estimated by the network.
 - **Epsilon Decay Plot:** Illustrates the reduction in exploration over time.
 
-![DQN](assets/plot.png)
+![DQN](assets/plots.png)
 
 ## 4 - Results
 Below are some snapshots of the DQN agent's performance during training:
 <table>
   <tr>
-    <td>Epoch 10<br><img src="assets/DQN/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
-    <td>Epoch 1000<br><img src="assets/DQN/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
-    <td>Epoch 1637<br><img src="assets/DQN/1650epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
+    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
+    <td>Epoch 1637<br><img src="assets/1650epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
   </tr>
 </table>
 
