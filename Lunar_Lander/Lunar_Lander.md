@@ -12,10 +12,8 @@
 - [2 - D3QN (Dueling Double DQN)](#2---d3qn-dueling-double-dqn)
 - [3 - Adaptive Gamma D3QN](#3---adaptive-gamma-d3qn)
 - [Results and Visualizations](#results-and-visualizations)
-- [Future Work](#future-work:)
+- [Future Work](#future-work)
 
-## **Results and Visualizations**
-## **Future Work: 🚀**
 
 ---
 
