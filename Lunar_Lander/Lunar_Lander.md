@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue)](https://www.python.org/downloads/release/python-380/)
 [![Status](https://img.shields.io/badge/status-active-green)]()
 
-Welcome to the **Lunar Lander RL Practices** repository! This repository showcases various implementations of reinforcement learning (RL) algorithms applied to the Lunar Lander environment, a classic RL problem. Here, we explore different methods ranging from **DQN** to **D3QN** with advanced techniques like **adaptive gamma**. The repository is structured into multiple directories, each representing a unique approach.
+🌍 **Welcome to the world of Reinforcement Learning (RL) in space!** This repository explores the exciting world of RL through the **Lunar Lander** problem. Whether you're a beginner to RL or a seasoned expert, this is your chance to see how different algorithms tackle the challenge of landing a spaceship 🚀 safely on a designated pad. Explore **DQN**, **D3QN**, and **Adaptive Gamma D3QN** with real performance visualizations and results. Fasten your seatbelts and prepare for takeoff! 🎯
 
 ---
 
@@ -19,12 +19,12 @@ Welcome to the **Lunar Lander RL Practices** repository! This repository showcas
 ## **1 - DQN (Deep Q-Networks)**
 - **[DQN Directory](DQN/)**
 
-The **Deep Q-Network (DQN)** algorithm is a foundational approach that combines Q-learning with neural networks. This method is widely used to solve problems where the state and action spaces are large and continuous. The DQN implementation here tackles the **Lunar Lander** problem, where an agent learns to control a spaceship and land it safely on a designated pad using reinforcement learning techniques.
+The **Deep Q-Network (DQN)** algorithm is one of the most fundamental techniques in RL, combining Q-learning with neural networks. In this Lunar Lander problem, the DQN agent learns how to land a spaceship by estimating the Q-values for each action it can take in every state.
 
 ### Highlights:
-- **Q-Learning with Function Approximation**: Uses neural networks to approximate the Q-function.
-- **Replay Memory**: Stores past experiences and trains the agent using mini-batches.
-- **Epsilon-Greedy Exploration**: Balances exploration and exploitation for policy learning.
+- 🧠 **Q-Learning with Neural Networks**: Q-values are approximated using neural networks.
+- 💾 **Replay Memory**: Experiences are stored and used for training the agent in mini-batches.
+- 🎲 **Epsilon-Greedy Exploration**: The agent strikes a balance between exploring new actions and exploiting known actions.
 
 **Performance Visualization**:
 ![DQN Performance](DQN/assets/plots.png)
@@ -34,12 +34,12 @@ The **Deep Q-Network (DQN)** algorithm is a foundational approach that combines 
 ## **2 - D3QN (Dueling Double DQN)**
 - **[D3QN Directory](D3QN/)**
 
-The **Dueling Double Deep Q-Network (D3QN)** extends DQN by addressing **overestimation bias** using a target network and separating **state-value** and **action-advantage** estimations. This combination improves the stability and efficiency of learning policies, making it more robust compared to vanilla DQN.
+**Dueling Double Deep Q-Network (D3QN)** extends the classic DQN approach by combining two powerful techniques: **Double Q-Learning** to reduce overestimation bias and **Dueling Network Architecture** to separately estimate the state-value and action-advantage. Together, they make learning faster and more stable.
 
 ### Highlights:
-- **Double Q-Learning**: Reduces overestimation of Q-values by decoupling action selection from action evaluation.
-- **Dueling Architecture**: Estimates the value of being in a state (state-value) and the benefit of each action (action-advantage) separately.
-- **Replay Memory and Target Network**: Ensures more stable and efficient learning by reducing correlation in training data.
+- 📉 **Double Q-Learning**: Reduces overestimation of Q-values by decoupling action selection from action evaluation.
+- 🏅 **Dueling Architecture**: Separates the estimation of state-value and action-advantage, improving learning efficiency.
+- 🎯 **Target Networks and Replay Memory**: These techniques ensure more stable learning by reducing correlation in the training data.
 
 **Performance Visualization**:
 ![D3QN Performance](D3QN/asset/plots.png)
@@ -49,16 +49,16 @@ The **Dueling Double Deep Q-Network (D3QN)** extends DQN by addressing **overest
 ## **3 - Adaptive Gamma D3QN**
 - **[Adaptive Gamma Directory](adaptive_gamma/)**
 
-This project builds upon the **D3QN** algorithm, introducing a **dynamic gamma adjustment** strategy inspired by the paper ["How to Discount Deep Reinforcement Learning"](https://arxiv.org/pdf/1512.02011) by François-Lavet et al. The goal is to enhance convergence speed and improve learning stability by gradually increasing the discount factor (gamma) during training.
+What if the agent could **dynamically adjust its focus** on long-term versus short-term rewards during training? That's what the **Adaptive Gamma D3QN** approach does! Inspired by the paper ["How to Discount Deep Reinforcement Learning"](https://arxiv.org/pdf/1512.02011), this method adjusts the discount factor (\(\gamma\)) dynamically to improve learning stability.
 
 ### Highlights:
-- **Dynamic Gamma**: Adjusts the discount factor over time, starting with short-term rewards and gradually shifting focus to long-term rewards.
-- **Incremental Gamma Strategy**: 
+- 🔄 **Dynamic Gamma Adjustment**: Gradually increases the discount factor (\(\gamma\)) to focus more on long-term rewards as training progresses.
+- 📈 **Incremental Gamma Strategy**: 
 ```css
 γ_{k+1} = 1 - 0.98 * (1 - γ_k)
 ```
-  This allows for more stable learning and faster convergence.
-- **D3QN Architecture**: Combines Double DQN with a dueling network to separate state-value and action-advantage estimations, further improving performance.
+  This helps stabilize learning and accelerate convergence.
+- 🧠 **D3QN Architecture**: Combines the benefits of Double DQN and Dueling Networks with dynamic gamma adjustments.
 
 **Performance Visualization**:
 ![Adaptive Gamma Performance](adaptive_gamma/assets/plots.png)
@@ -67,49 +67,34 @@ This project builds upon the **D3QN** algorithm, introducing a **dynamic gamma a
 
 ## **Results and Visualizations**
 
-### DQN Results:
-<table>
-  <tr>
-    <td>Epoch 10<br><img src="DQN/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
-    <td>Epoch 1000<br><img src="DQN/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
-    <td>Epoch 1637<br><img src="DQN/assets/1650epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
-  </tr>
-</table>
+To better compare the performance of each algorithm, here are the results visualized through **loss plots**, **reward plots**, **epsilon decay plots**, and **mean Q-value plots**. These visualizations give you insight into how each algorithm learns over time.
 
-### D3QN Results:
-<table>
-  <tr>
-    <td>Epoch 10<br><img src="D3QN/asset/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
-    <td>Epoch 750<br><img src="D3QN/asset/750epoch.gif" alt="Epoch 750 Performance" width="240px"></td>
-    <td>Epoch 1500<br><img src="D3QN/asset/1500epoch.gif" alt="Epoch 1500 Performance" width="240px"></td>
-  </tr>
-</table>
+### **Comparison of DQN, D3QN, and Adaptive Gamma D3QN:**
 
-### Adaptive Gamma D3QN Results:
-<table>
-  <tr>
-    <td>Epoch 10<br><img src="adaptive_gamma/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
-    <td>Epoch 500<br><img src="adaptive_gamma/assets/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
-    <td>Epoch 1000<br><img src="adaptive_gamma/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
-  </tr>
-</table>
+| Metric              | DQN 📊 | D3QN 📈 | Adaptive Gamma D3QN 📉 |
+|---------------------|--------|--------|-----------------------|
+| **Loss**            | Highly fluctuating, stabilizes towards end | Smoother, fewer fluctuations | Most stable, gradual decline |
+| **Reward**          | Large fluctuations | More consistent, but some oscillations | Stable, higher rewards with faster convergence |
+| **Epsilon Decay**   | Slow decay over time | Faster decay | Similar to D3QN |
+| **Mean Q-Values**   | Steady rise, but slow | Faster rise | Steady and higher overall Q-values |
+
+| Visualization    | ![DQN Plots](DQN/assets/plots.png) | ![D3QN Plots](D3QN/asset/plots.png) | ![Adaptive Gamma D3QN Plots](adaptive_gamma/assets/plots.png) |
 
 ---
 
-## **Future Work**
+## **Future Work: 🚀**
 
-We plan to extend this repository by implementing advanced reinforcement learning methods and techniques, including:
-- **Prioritized Experience Replay**: Prioritizing more important transitions for replay, improving learning efficiency.
-- **Noisy Networks for Exploration**: Integrating noise into network parameters to enhance exploration without relying on epsilon-greedy methods.
-- **Comparison with Actor-Critic Methods**: Analyzing the performance of D3QN and Adaptive Gamma D3QN against popular actor-critic algorithms.
-- **Exploring Rainbow DQN**: Incorporating multiple improvements such as Noisy Nets, Prioritized Replay, and Multi-step Learning in a single framework.
+As we push the boundaries of RL in this space adventure, here are some future directions we'd love to explore:
 
----
-
-Feel free to explore the code, experiment with the parameters, and contribute to this repository!
-
-Happy coding and learning! 🚀
+- **🌟 Prioritized Experience Replay**: Focus on more significant experiences to boost learning efficiency.
+- **🎲 Noisy Networks**: Introduce noise into network parameters to improve exploration.
+- **⚖️ Actor-Critic Comparison**: Explore how **D3QN** stacks up against Actor-Critic methods like **A3C** or **PPO**.
+- **🌈 Rainbow DQN**: Combine all the best practices in one — including Double DQN, Dueling Networks, Noisy Nets, and Prioritized Replay for an ultimate RL agent.
 
 ---
 
-This README provides a high-level overview of the **Lunar Lander RL Practices** repository, explaining the structure and details of each directory (DQN, D3QN, and Adaptive Gamma). Let me know if you want further refinements!
+🎉 **Quote for Thought**: *“The beautiful thing about learning is that nobody can take it away from you.” — B.B. King*
+
+Feel free to explore the code, experiment with parameters, and share your results! The sky (or perhaps space 🚀) is the limit when it comes to Reinforcement Learning. Have fun coding and may your models land softly! 😄
+
+Happy learning! 🚀
