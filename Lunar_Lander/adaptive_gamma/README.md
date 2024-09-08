@@ -75,7 +75,7 @@ The `Model_TrainTest` class handles the overall training and evaluation pipeline
 ### **Training Process**
 
 The agent is trained with the following key hyperparameters:
-- **Dynamic Discount Factor**: \( \gamma \) starts at 0.9965 and increases incrementally during training.
+- **Dynamic Discount Factor**: γ starts at 0.9965 and increases incrementally during training.
 - **Learning Rate**: Adjusts dynamically, starting from 0.0002.
 - **Epsilon Decay**: Reduces exploration over time, as the agent becomes more confident in its learned policy.
 
