@@ -123,8 +123,6 @@ As we push the boundaries of RL in this space adventure, here are some future di
 
 ---
 
-🎉 **Quote for Thought**: *“The beautiful thing about learning is that nobody can take it away from you.” — B.B. King*
-
 Feel free to explore the code, experiment with parameters, and share your results! The sky (or perhaps space 🚀) is the limit when it comes to Reinforcement Learning. Have fun coding and may your models land softly! 😄
 
 Happy learning! 🚀
