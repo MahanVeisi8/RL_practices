@@ -54,9 +54,9 @@ This project builds upon the **D3QN** algorithm, introducing a **dynamic gamma a
 ### Highlights:
 - **Dynamic Gamma**: Adjusts the discount factor over time, starting with short-term rewards and gradually shifting focus to long-term rewards.
 - **Incremental Gamma Strategy**: 
-  \[
-  \gamma_{k+1} = 1 - 0.98 \cdot (1 - \gamma_k)
-  \]
+```css
+γ_{k+1} = 1 - 0.98 * (1 - γ_k)
+```
   This allows for more stable learning and faster convergence.
 - **D3QN Architecture**: Combines Double DQN with a dueling network to separate state-value and action-advantage estimations, further improving performance.
 
