@@ -21,7 +21,7 @@ This project applies the **D3QN algorithm**, which combines **Double DQN** and *
 ### **Double DQN**
 
 The Double DQN algorithm addresses the **overestimation bias** of Q-learning by decoupling the selection and evaluation of actions:
-- The **main DQN** selects the next action \( \argmax_a Q(s', a) \).
+- The **main DQN** selects the next action (argmax_a Q(s', a)).
 - The **target network** computes the Q-value of the selected action.
 
 **Double DQN Update Formula**:
