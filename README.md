@@ -16,39 +16,48 @@
 ## **Overview**
 
 ### **Lunar Lander RL Practices 🚀**
-In this project, we explore multiple reinforcement learning algorithms applied to the **Lunar Lander** problem. The goal is to land a spaceship safely on a designated pad while minimizing fuel consumption and avoiding crashes. The project includes the following RL techniques:
-- **Deep Q-Networks (DQN)**
-- **Dueling Double DQN (D3QN)**
-- **Adaptive Gamma D3QN**
 
-#### **Highlights:**
-- **Dynamic Gamma** adjustment for better reward optimization.
-- **Dueling Networks** that improve stability and learning efficiency.
-- **Visualizations** of learning performance with loss, reward, and Q-value plots.
+The **Lunar Lander** environment challenges the agent to land a spaceship safely on a designated pad while minimizing fuel consumption and avoiding crashes. It’s a classic RL task used to test control policies. This project explores various RL approaches to solve this challenge.
 
+#### **Implemented Algorithms**:
+- **Deep Q-Networks (DQN)**: Combines Q-Learning with deep neural networks to learn optimal policies.
+- **Dueling Double DQN (D3QN)**: Adds improvements like Double Q-Learning and Dueling Networks to address overestimation and stabilize learning.
+- **Adaptive Gamma D3QN**: Dynamically adjusts the discount factor (\(\gamma\)) during training to improve long-term reward learning.
+
+#### **Key Features**:
+- 🔄 **Dynamic Gamma Adjustment** for better reward optimization over time.
+- 🏅 **Dueling Networks** that separate value from advantage estimations, improving stability and efficiency.
+- 📊 **Visualizations** of training progress, including loss, reward, and Q-value plots.
+
+#### **Performance Visualizations**:
 <table>
   <tr>
     <td>Epoch 10<br><img src="Lunar_Lander/adaptive_gamma/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
-    <td>Epoch 1000<br><img src="Lunar_Lander/adaptive_gamma/assets/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
-    <td>Epoch 1637<br><img src="Lunar_Lander/adaptive_gamma/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
+    <td>Epoch 500<br><img src="Lunar_Lander/adaptive_gamma/assets/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="Lunar_Lander/adaptive_gamma/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
   </tr>
 </table>
 
-Take a deep dive into each subdirectory to explore the implementation and see how each algorithm tackles this complex RL task.
+Each subdirectory within the **Lunar Lander** project provides an in-depth implementation and visualization of the respective algorithms, showcasing how different methods tackle this complex RL task.
 
 ---
 
 ### **CartPole RL Practices 🕹️**
-This project is a deep exploration of various reinforcement learning strategies applied to the **Cart Pole** problem. The **Cart Pole** problem is a simple but challenging RL task where the agent tries to balance a pole on a cart by applying left or right forces.
 
-#### **Highlights:**
-- **Deep Q-Networks (DQN)**
-- **Hyperparameter Exploration**: Understand how different settings (learning rate, discount factors) affect the performance.
-- **Boltzmann Exploration**: Alternative action-selection strategy compared to epsilon-greedy.
-- **SARSA (State-Action-Reward-State-Action)**
+The **CartPole** problem is another classic reinforcement learning task where the agent’s goal is to balance a pole on a moving cart. This problem serves as a great testbed for exploring and evaluating various RL algorithms.
 
-Each subdirectory explores different RL techniques and their performance on the Cart Pole problem.
+#### **Implemented Algorithms**:
+- **Deep Q-Networks (DQN)**: A neural network-based method for approximating the Q-value function.
+- **Hyperparameter Exploration**: Experiments with different learning rates, discount factors, and other hyperparameters to optimize performance.
+- **Boltzmann Exploration**: Uses a probabilistic method to choose actions based on the Q-values, offering an alternative to epsilon-greedy exploration.
+- **SARSA (State-Action-Reward-State-Action)**: An on-policy algorithm that learns based on the action it actually took.
 
+#### **Key Features**:
+- 🧪 **Experimentation with Hyperparameters**: See how different settings impact learning efficiency and performance.
+- 🎲 **Boltzmann Exploration**: A more probabilistic approach to action selection compared to traditional methods.
+- 💻 **Detailed Visualizations**: See how different algorithms perform through visual aids like loss and reward plots.
+
+#### **Performance Visualizations**:
 <table>
   <tr>
     <td>Epoch 10<br><img src="assets/Cartpole/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
@@ -57,21 +66,28 @@ Each subdirectory explores different RL techniques and their performance on the 
   </tr>
 </table>
 
+Explore each subdirectory for the **CartPole** project to see the detailed implementations and performance analysis of various RL methods.
+
 ---
 
 ## **Future Directions 🚀**
 
-🎉 **Quote for Thought**: *“The beautiful thing about learning is that nobody can take it away from you.” — B.B. King*
+As we continue to explore and experiment with reinforcement learning algorithms, here are some exciting future directions for the repository:
 
-As we continue to explore and experiment with reinforcement learning algorithms, here are some future directions for the repository:
-
-- **🌟 Prioritized Experience Replay**: Implement a prioritized replay buffer to sample more important transitions.
-- **🌈 Rainbow DQN**: Combine several key improvements in one algorithm, including Double DQN, Dueling Networks, Noisy Nets, and Prioritized Experience Replay.
-- **⚖️ Actor-Critic Methods**: Explore more advanced algorithms such as **A3C**, **PPO**, and **DDPG** to tackle continuous action spaces.
+- **🌟 Prioritized Experience Replay**: Implementing a prioritized replay buffer to sample more important transitions during training, improving learning efficiency.
+- **🌈 Rainbow DQN**: Combining multiple improvements like Double DQN, Dueling Networks, Noisy Nets, and Prioritized Replay in a single framework for more efficient learning.
+- **⚖️ Actor-Critic Methods**: Exploring more advanced algorithms such as **A3C**, **PPO**, and **DDPG**, which can handle continuous action spaces, for more complex RL tasks.
 
 ---
 
 ## **Contributing 🎉**
-We welcome contributions from the community! If you have suggestions, improvements, or want to contribute new experiments, please feel free to submit a pull request or open an issue.
+
+We welcome contributions from the community! Whether you have suggestions, improvements, or new experiments to share, please feel free to submit a pull request or open an issue. Every contribution helps improve and expand the understanding of reinforcement learning in these exciting environments.
 
 Happy exploring and learning! 🚀
+
+---
+
+**Quote for Thought**: 
+*“The beautiful thing about learning is that nobody can take it away from you.” — B.B. King*
+
