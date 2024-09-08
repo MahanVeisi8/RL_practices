@@ -1,12 +1,53 @@
-# Reinforcement Learning Practices 🚀
+# **Reinforcement Learning Practices 🚀**
 
 ![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
 
-Welcome to the Reinforcement Learning Practices repository! This repository hosts multiple projects, each dedicated to exploring different aspects and techniques of reinforcement learning across various problems and setups.
+🌍 **Welcome to the Reinforcement Learning Practices repository!** This repository is a collection of experiments, projects, and implementations focusing on various **reinforcement learning (RL)** algorithms applied to well-known RL problems. Whether you're a beginner or a researcher, you'll find a range of projects designed to demonstrate the strengths, weaknesses, and capabilities of different RL approaches. 
 
-## Current Projects
-- [CartPole RL Practices](Cartpole/): A collection of experiments and implementations focusing on the Cart Pole problem using various reinforcement learning algorithms.
+---
+
+## **Current Projects**
+- [**Lunar Lander RL Practices**](Lunar_Lander/): Explore different RL techniques applied to the **Lunar Lander** problem, from **DQN** to **D3QN** and beyond.
+- [**CartPole RL Practices**](Cartpole/): A collection of experiments focused on the classic **Cart Pole** problem using various RL algorithms.
+
+---
+
+## **Overview**
+
+### **Lunar Lander RL Practices 🚀**
+In this project, we explore multiple reinforcement learning algorithms applied to the **Lunar Lander** problem. The goal is to land a spaceship safely on a designated pad while minimizing fuel consumption and avoiding crashes. The project includes the following RL techniques:
+- **Deep Q-Networks (DQN)**
+- **Dueling Double DQN (D3QN)**
+- **Adaptive Gamma D3QN**
+
+#### **Highlights:**
+- **Dynamic Gamma** adjustment for better reward optimization.
+- **Dueling Networks** that improve stability and learning efficiency.
+- **Visualizations** of learning performance with loss, reward, and Q-value plots.
+
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="Lunar_Lander/DQN/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="Lunar_Lander/DQN/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
+    <td>Epoch 1637<br><img src="Lunar_Lander/DQN/assets/1650epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
+  </tr>
+</table>
+
+Take a deep dive into each subdirectory to explore the implementation and see how each algorithm tackles this complex RL task.
+
+---
+
+### **CartPole RL Practices 🕹️**
+This project is a deep exploration of various reinforcement learning strategies applied to the **Cart Pole** problem. The **Cart Pole** problem is a simple but challenging RL task where the agent tries to balance a pole on a cart by applying left or right forces.
+
+#### **Highlights:**
+- **Deep Q-Networks (DQN)**
+- **Hyperparameter Exploration**: Understand how different settings (learning rate, discount factors) affect the performance.
+- **Boltzmann Exploration**: Alternative action-selection strategy compared to epsilon-greedy.
+- **SARSA (State-Action-Reward-State-Action)**
+
+Each subdirectory explores different RL techniques and their performance on the Cart Pole problem.
 
 <table>
   <tr>
@@ -16,25 +57,19 @@ Welcome to the Reinforcement Learning Practices repository! This repository host
   </tr>
 </table>
 
-## Overview
+---
 
-### CartPole RL Practices
-This project is an extensive exploration of different reinforcement learning strategies applied to the classic Cart Pole problem. Each subdirectory focuses on a unique RL algorithm or aspect, providing deep dives into their setup, implementation, and performance analysis.
+## **Future Directions 🚀**
 
-#### Highlights:
-- **Deep Q-Networks (DQN)**
-- **Hyperparameter Exploration**
-- **Boltzmann Exploration**
-- **SARSA (State-Action-Reward-State-Action)**
+As we continue to explore and experiment with reinforcement learning algorithms, here are some future directions for the repository:
 
-Each directory contains detailed implementations and results that shed light on the capabilities and challenges of applying RL algorithms to a well-understood test environment in the field.
+- **🌟 Prioritized Experience Replay**: Implement a prioritized replay buffer to sample more important transitions.
+- **🌈 Rainbow DQN**: Combine several key improvements in one algorithm, including Double DQN, Dueling Networks, Noisy Nets, and Prioritized Experience Replay.
+- **⚖️ Actor-Critic Methods**: Explore more advanced algorithms such as **A3C**, **PPO**, and **DDPG** to tackle continuous action spaces.
 
-## Future Directions
-The repository is continuously updated with new projects and experiments as we explore more complex problems and sophisticated algorithms in reinforcement learning.
+---
 
-Feel free to dive into each project directory for comprehensive code, insights, and analyses. Whether you're new to reinforcement learning or looking to expand your understanding of specific algorithms and their applications, there's something here for everyone. Stay tuned for more updates and new projects!
-
-### Contributing
+## **Contributing 🎉**
 We welcome contributions from the community! If you have suggestions, improvements, or want to contribute new experiments, please feel free to submit a pull request or open an issue.
 
-Happy exploring and learning!
+Happy exploring and learning! 🚀
