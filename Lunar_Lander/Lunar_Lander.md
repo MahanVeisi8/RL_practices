@@ -78,7 +78,36 @@ To better compare the performance of each algorithm, here are the results visual
 | **Epsilon Decay**   | Slow decay over time | Faster decay | Similar to D3QN |
 | **Mean Q-Values**   | Steady rise, but slow | Faster rise | Steady and higher overall Q-values |
 
-| Visualization    | ![DQN Plots](DQN/assets/plots.png) | ![D3QN Plots](D3QN/asset/plots.png) | ![Adaptive Gamma D3QN Plots](adaptive_gamma/assets/plots.png) |
+---
+
+## **Results and Visualizations**
+
+### DQN Results:
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="DQN/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="DQN/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
+    <td>Epoch 1637<br><img src="DQN/assets/1650epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
+  </tr>
+</table>
+
+### D3QN Results:
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="D3QN/asset/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 750<br><img src="D3QN/asset/750epoch.gif" alt="Epoch 750 Performance" width="240px"></td>
+    <td>Epoch 1500<br><img src="D3QN/asset/1500epoch.gif" alt="Epoch 1500 Performance" width="240px"></td>
+  </tr>
+</table>
+
+### Adaptive Gamma D3QN Results:
+<table>
+  <tr>
+    <td>Epoch 10<br><img src="adaptive_gamma/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 500<br><img src="adaptive_gamma/assets/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="adaptive_gamma/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
+  </tr>
+</table>
 
 ---
 
