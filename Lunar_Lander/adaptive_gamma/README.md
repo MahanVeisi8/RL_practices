@@ -102,7 +102,7 @@ The dynamic gamma strategy has significantly accelerated learning, allowing the 
 
 <table>
   <tr>
-    <td>Epoch 10<br><img src="assets/10epoch.git" alt="Epoch 10" width="240px"></td>
+    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10" width="240px"></td>
     <td>Epoch 500<br><img src="assets/500epoch.gif" alt="Epoch 500" width="240px"></td>
     <td>Epoch 1000<br><img src="assets/1000epoch.gif" alt="Epoch 1000" width="240px"></td>
   </tr>
