@@ -52,7 +52,7 @@ The **Deep Q-Network (DQN)** algorithm is one of the most fundamental techniques
 What if the agent could **dynamically adjust its focus** on long-term versus short-term rewards during training? That's what the **Adaptive Gamma D3QN** approach does! Inspired by the paper ["How to Discount Deep Reinforcement Learning"](https://arxiv.org/pdf/1512.02011), this method adjusts the discount factor (\(\gamma\)) dynamically to improve learning stability.
 
 ### Highlights:
-- 🔄 **Dynamic Gamma Adjustment**: Gradually increases the discount factor (\(\gamma\)) to focus more on long-term rewards as training progresses.
+- 🔄 **Dynamic Gamma Adjustment**: Gradually increases the discount factor γ to focus more on long-term rewards as training progresses.
 - 📈 **Incremental Gamma Strategy**: 
 ```css
 γ_{k+1} = 1 - 0.98 * (1 - γ_k)
