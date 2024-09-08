@@ -1,7 +1,3 @@
-Great! Based on your input, here's a structured and comprehensive README for the **Dueling Double Deep Q-Network (D3QN) Lunar Lander** project:
-
----
-
 # **Lunar Lander D3QN 🛸**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XufOyUU4ag68-N-ige3vxl_p6-fpXZ4s?usp=sharing)
@@ -29,7 +25,7 @@ The Double DQN algorithm addresses the **overestimation bias** of Q-learning by 
 - The **target network** computes the Q-value of the selected action.
 
 **Double DQN Update Formula**:
-![Double DQN Formula](assets/double.png)
+![Double DQN Formula](asset/double.png)
 
 This ensures that the action selection and value estimation are handled separately, reducing the tendency to overestimate action values.
 
@@ -41,7 +37,7 @@ The **Dueling Network Architecture** decouples the state value and action advant
 This architecture enables the network to distinguish between the importance of the state and the action more effectively, improving learning.
 
 **Dueling DQN Architecture**:
-![Dueling DQN Architecture](assets/dueling.png)
+![Dueling DQN Architecture](asset/dueling.png)
 
 ---
 
@@ -93,7 +89,7 @@ Multiple plots help visualize the training process:
 - **Mean Q-Value Plot**: Visualizes the mean Q-value estimates.
 - **Epsilon Decay Plot**: Illustrates how exploration decreases over time.
 
-![plots](assets/plots.png)
+![plots](asset/plots.png)
 ---
 
 ## **5 - Results**
@@ -102,9 +98,9 @@ The D3QN agent demonstrates significant improvement in landing success as traini
 
 <table>
   <tr>
-    <td>Epoch 10<br><img src="assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
-    <td>Epoch 750<br><img src="assets/750epoch.gif" alt="Epoch 750 Performance" width="240px"></td>
-    <td>Epoch 1500<br><img src="assets/1500epoch.gif" alt="Epoch 1500 Performance" width="240px"></td>
+    <td>Epoch 10<br><img src="asset/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 750<br><img src="asset/750epoch.gif" alt="Epoch 750 Performance" width="240px"></td>
+    <td>Epoch 1500<br><img src="asset/1500epoch.gif" alt="Epoch 1500 Performance" width="240px"></td>
   </tr>
 </table>
 
@@ -120,17 +116,4 @@ In future work, we aim to extend this project by exploring:
 - **Comparison with Other Algorithms**: Evaluating the performance of D3QN against other advanced RL algorithms such as **Rainbow DQN** and **Actor-Critic methods**.
 
 ---
-
-## **Colab Links**
-
-- [Lunar Lander D3QN Notebook](https://colab.research.google.com/drive/1XufOyUU4ag68-N-ige3vxl_p6-fpXZ4s?usp=sharing)
-
-Feel free to explore the code, run experiments, and adjust hyperparameters to further optimize the agent’s performance!
-
----
-
 Happy learning and coding! 🚀
-
----
-
-This README covers the essential aspects of your project, highlights the advantages of D3QN, and provides useful insights into the implementation. The visuals and future directions help engage other developers and researchers interested in your project. Let me know if you'd like to make further adjustments!
