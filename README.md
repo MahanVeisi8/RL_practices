@@ -28,9 +28,9 @@ In this project, we explore multiple reinforcement learning algorithms applied t
 
 <table>
   <tr>
-    <td>Epoch 10<br><img src="Lunar_Lander/DQN/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
-    <td>Epoch 1000<br><img src="Lunar_Lander/DQN/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
-    <td>Epoch 1637<br><img src="Lunar_Lander/DQN/assets/1650epoch.gif" alt="Epoch 1637 Performance" width="240px"></td>
+    <td>Epoch 10<br><img src="Lunar_Lander/adaptive_gamma/assets/10epoch.gif" alt="Epoch 10 Performance" width="240px"></td>
+    <td>Epoch 1000<br><img src="Lunar_Lander/adaptive_gamma/assets/500epoch.gif" alt="Epoch 500 Performance" width="240px"></td>
+    <td>Epoch 1637<br><img src="Lunar_Lander/adaptive_gamma/assets/1000epoch.gif" alt="Epoch 1000 Performance" width="240px"></td>
   </tr>
 </table>
 
