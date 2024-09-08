@@ -32,7 +32,10 @@ This ensures that the action selection and value estimation are handled separate
 ### **Dueling DQN**
 
 The **Dueling Network Architecture** decouples the state value and action advantage, improving stability by allowing the agent to estimate the **state value** \( V(s) \) and the **advantage** of each action \( A(s, a) \) independently:
-- \( Q(s, a) = V(s) + A(s, a) - \frac{1}{|A|}\sum A(s, a') \)
+
+```math
+Q(s, a) = r(s, a) + \gamma Q(s', \argmax_a Q(s', a))
+```
 
 This architecture enables the network to distinguish between the importance of the state and the action more effectively, improving learning.
 
