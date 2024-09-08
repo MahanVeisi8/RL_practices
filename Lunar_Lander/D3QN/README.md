@@ -21,7 +21,7 @@ This project applies the **D3QN algorithm**, which combines **Double DQN** and *
 ### **Double DQN**
 
 The Double DQN algorithm addresses the **overestimation bias** of Q-learning by decoupling the selection and evaluation of actions:
-- The **main DQN** selects the next action (argmax_a Q(s', a)).
+- The **main DQN** selects the next action based on the highest Q-value (argmax \(Q(s', a)\)).
 - The **target network** computes the Q-value of the selected action.
 
 **Double DQN Update Formula**:
@@ -56,9 +56,9 @@ The `DuelingDQN_network` class implements the dueling architecture, which separa
 ### **D3QN Agent**
 
 The `D3QN_agent` class orchestrates the training process. Key components include:
-- **Epsilon-Greedy Action Selection**: Chooses actions based on Q-values with exploration controlled by epsilon.
-- **Learning**: Updates the Q-values using the Double DQN method and the dueling architecture.
-- **Target Network**: Soft updates ensure that the target network slowly tracks the main network, improving stability.
+- **Epsilon-Greedy Action Selection**: Chooses actions based on Q-values, balancing exploration and exploitation.
+- **Learning**: Updates the Q-values using the Double DQN method and the dueling architecture to ensure stability and efficient learning.
+- **Target Network**: Soft updates ensure that the target network slowly tracks the main network, further enhancing stability during learning.
 
 ---
 
@@ -71,24 +71,25 @@ The agent interacts with the environment, collects experiences, and updates its 
 - **Discount factor**: Determines the importance of future rewards.
 - **Epsilon decay**: Reduces exploration over time as the agent learns.
 
-
+The training process aims to improve the agent's ability to land the spacecraft successfully by adjusting its control actions based on state and reward feedback from the environment.
 
 ### **Performance Analysis**
 
 The performance of the agent is evaluated based on:
-- **Reward accumulation**: Tracks the total reward obtained by the agent over episodes.
-- **Q-value estimation**: Measures the average Q-values across states.
-- **Loss reduction**: Observes how the loss decreases as the agent learns.
+- **Reward accumulation**: Tracks the total reward obtained by the agent over episodes, providing insights into policy improvement.
+- **Q-value estimation**: Measures the average Q-values across states, giving an indication of how well the agent is learning the value of actions.
+- **Loss reduction**: Observes how the loss decreases as the agent learns from its experiences, a key metric in understanding the convergence of the model.
 
 ### **Visualization**
 
 Multiple plots help visualize the training process:
-- **Reward Plot**: Shows the reward progression over episodes.
-- **Loss Plot**: Tracks how the model loss changes during training.
-- **Mean Q-Value Plot**: Visualizes the mean Q-value estimates.
-- **Epsilon Decay Plot**: Illustrates how exploration decreases over time.
+- **Reward Plot**: Shows the reward progression over episodes, illustrating how the agent improves over time.
+- **Loss Plot**: Tracks how the model loss changes during training, giving insight into model optimization.
+- **Mean Q-Value Plot**: Visualizes the mean Q-value estimates, helping to understand how action values evolve.
+- **Epsilon Decay Plot**: Illustrates how exploration decreases over time as the agent learns and shifts more toward exploitation.
 
 ![plots](asset/plots.png)
+
 ---
 
 ## **5 - Results**
@@ -103,7 +104,7 @@ The D3QN agent demonstrates significant improvement in landing success as traini
   </tr>
 </table>
 
-The training results reveal that the D3QN agent progressively learns more effective landing strategies, particularly after fine-tuning hyperparameters such as epsilon decay and learning rate.
+The training results reveal that the D3QN agent progressively learns more effective landing strategies, particularly after fine-tuning hyperparameters such as epsilon decay and learning rate. You can see the improvements across different training epochs, with better control and more successful landings as training progresses.
 
 ---
 
@@ -111,8 +112,10 @@ The training results reveal that the D3QN agent progressively learns more effect
 
 In future work, we aim to extend this project by exploring:
 - **Prioritized Experience Replay**: Implementing a more sophisticated experience replay strategy where experiences with higher TD errors are replayed more often.
-- **Noisy Networks for Exploration**: Replacing epsilon-greedy exploration with parameter-based exploration techniques.
-- **Comparison with Other Algorithms**: Evaluating the performance of D3QN against other advanced RL algorithms such as **Rainbow DQN** and **Actor-Critic methods**.
+- **Noisy Networks for Exploration**: Replacing epsilon-greedy exploration with parameter-based exploration techniques, allowing for more dynamic exploration.
+- **Comparison with Other Algorithms**: Evaluating the performance of D3QN against other advanced RL algorithms such as **Rainbow DQN** and **Actor-Critic methods**, to further optimize policy learning.
 
 ---
+
 Happy learning and coding! 🚀
+
