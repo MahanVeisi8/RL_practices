@@ -61,6 +61,8 @@ Each subdirectory explores different RL techniques and their performance on the 
 
 ## **Future Directions 🚀**
 
+🎉 **Quote for Thought**: *“The beautiful thing about learning is that nobody can take it away from you.” — B.B. King*
+
 As we continue to explore and experiment with reinforcement learning algorithms, here are some future directions for the repository:
 
 - **🌟 Prioritized Experience Replay**: Implement a prioritized replay buffer to sample more important transitions.
