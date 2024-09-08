@@ -25,7 +25,7 @@ This work builds on the D3QN project from [here](https://github.com/MahanVeisi8/
 The **dynamic gamma approach** is based on the paper [François-Lavet et al. (2016)](https://arxiv.org/pdf/1512.02011), which proposes incrementing the discount factor gradually over time. By starting with a lower gamma, the agent focuses on short-term rewards initially, avoiding instability caused by large reward estimations. As the agent progresses, the discount factor is slowly increased to focus on long-term reward maximization.
 
 The gamma increment follows this formula:
-```
+```scss
 γ_{k+1} = 1 - 0.98 * (1 - γ_k)
 ```
 This incremental strategy helps the agent strike a balance between short-term and long-term reward learning, leading to more stable policy improvements.
