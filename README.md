@@ -22,7 +22,7 @@ The **Lunar Lander** environment challenges the agent to land a spaceship safely
 #### **Implemented Algorithms**:
 - **Deep Q-Networks (DQN)**: Combines Q-Learning with deep neural networks to learn optimal policies.
 - **Dueling Double DQN (D3QN)**: Adds improvements like Double Q-Learning and Dueling Networks to address overestimation and stabilize learning.
-- **Adaptive Gamma D3QN**: Dynamically adjusts the discount factor (\(\gamma\)) during training to improve long-term reward learning.
+- **Adaptive Gamma D3QN**: Dynamically adjusts the discount factor *gamma* during training to improve long-term reward learning.
 
 #### **Key Features**:
 - 🔄 **Dynamic Gamma Adjustment** for better reward optimization over time.
